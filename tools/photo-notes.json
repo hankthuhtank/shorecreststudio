@@ -1,0 +1,99 @@
+{
+  "_readme": "Titles, captions and alt text for the 2019 photographs. The 45-day photographs use scene-notes.json (shared with the store) and the titles in the Shorecrest catalog.",
+  "2019-guadalupepeak": {
+    "title": "Sundown at the Guadalupes",
+    "place": "Guadalupe Mountains, Texas",
+    "line": "The first night out. The sun dropping behind the ridge, and nothing between here and there.",
+    "alt": "The sun setting over a long desert ridge, light flaring across dry grass and a fence line beside the highway."
+  },
+  "2019-carlsbad": {
+    "title": "Prickly Pear Trail",
+    "place": "Carlsbad Caverns, New Mexico",
+    "line": "Prickly pear holding on to the hillside above the caverns.",
+    "alt": "Prickly pear cactus growing on a rocky desert hillside under a bright blue sky."
+  },
+  "2019-carlsbad2": {
+    "title": "Underground",
+    "place": "Carlsbad Caverns, New Mexico",
+    "line": "A few hundred feet down, where the rock grows in slow motion.",
+    "alt": "Pale cave formations lit in the dark, mirrored in a still pool deep inside Carlsbad Caverns."
+  },
+  "2019-carlsbad3": {
+    "title": "The Long View",
+    "place": "Carlsbad Caverns, New Mexico",
+    "line": "Flat land running all the way to the edge of the sky.",
+    "alt": "A vast flat plain stretching to the horizon below a rocky desert slope under a pale gray sky."
+  },
+  "2019-whitesands": {
+    "title": "White Sands",
+    "place": "White Sands, New Mexico",
+    "line": "Sand that looks like snow, and a co-pilot who didn't mind either way.",
+    "alt": "A husky in a yellow bandana sitting on bright white gypsum sand under a soft gray sky."
+  },
+  "2019-arizona3": {
+    "title": "Welcome to Arizona",
+    "place": "Arizona state line",
+    "line": "One more state line behind us.",
+    "alt": "The Welcome to Arizona sign beside the highway, with a wooded mountain and scattered clouds behind it."
+  },
+  "2019-arizona": {
+    "title": "Westbound",
+    "place": "Arizona",
+    "line": "Two lanes, a low sun, and no reason to slow down.",
+    "alt": "A straight two-lane highway running toward a low sun under a cloudy sky."
+  },
+  "2019-arizona2": {
+    "title": "Snow on the Peaks",
+    "place": "Northern Arizona",
+    "line": "Snow on the mountains, seen from the desert floor.",
+    "alt": "Snow-capped mountains rising beyond dry grassland and a fence line, seen from the highway."
+  },
+  "2019-grandcanyon": {
+    "title": "Camp in the Pines",
+    "place": "Grand Canyon, Arizona",
+    "line": "Home for the night: a tent, the truck, and tall pines.",
+    "alt": "A black pickup truck and a green tent at a campsite among tall pines under a deep blue sky."
+  },
+  "2019-grandcanyon2": {
+    "title": "On the Rim",
+    "place": "Grand Canyon, Arizona",
+    "line": "Taking in the view from the edge.",
+    "alt": "A husky resting on a rock at the edge of the Grand Canyon, red and orange canyon layers stretching out behind."
+  },
+  "2019-horseshoebay": {
+    "title": "Horseshoe Bend",
+    "place": "Horseshoe Bend, Arizona",
+    "line": "The Colorado River making its slow turn around the rock.",
+    "alt": "Horseshoe Bend from the rim, the Colorado River curving around a red sandstone tower, with a person and a dog sitting on the ledge."
+  },
+  "2019-zion": {
+    "title": "Into Zion",
+    "place": "Zion, Utah",
+    "line": "Red walls on both sides and the sun coming over the top.",
+    "alt": "A husky on a dirt trail in Zion, red canyon walls rising on both sides as the sun flares over the rim."
+  },
+  "2019-utah": {
+    "title": "Big Sky Country",
+    "place": "Southern Utah",
+    "line": "Heading east under a sky that wouldn't quit.",
+    "alt": "Wispy white clouds streaked across a blue sky above flat golden grassland and a fence line."
+  },
+  "2019-mesaverde": {
+    "title": "The Overlook",
+    "place": "Mesa Verde, Colorado",
+    "line": "Sitting with it for a while.",
+    "alt": "A person sitting on the edge of an overlook above a wide forested canyon lined with layered mesa walls."
+  },
+  "2019-mesaverde2": {
+    "title": "Cliff Dwellings",
+    "place": "Mesa Verde, Colorado",
+    "line": "Stone rooms tucked under the cliff, still standing.",
+    "alt": "Ancient stone cliff dwellings built under a sandstone overhang, with patches of snow on the slope below."
+  },
+  "2019-texas": {
+    "title": "Home Stretch",
+    "place": "West Texas",
+    "line": "Green grass, big clouds, almost home.",
+    "alt": "A husky standing in a wide green field under a big sky full of white clouds."
+  }
+}
