@@ -121,12 +121,11 @@
   },
   {
     "id": "places",
-    "name": "People & places",
+    "name": "Random Places",
     "cover": "new-winslow",
     "photos": [
       "new-winslow",
       "new-vegas",
-      "new-self",
       "SC-020",
       "SC-009",
       "SC-006",
