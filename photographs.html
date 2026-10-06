@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Photographs | Shorecrest Studio</title>
-  <meta name="description" content="Every photograph from two road trips across the American West, in the order they were taken. By Helal Safi.">
+  <meta name="description" content="Coastlines, mountains, waterfalls, wildlife and night skies. Explore the photography collections of Helal Safi.">
   <meta name="theme-color" content="#f2f3ef">
   <link rel="canonical" href="https://shorecrest.studio/photographs.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shorecrest Studio">
   <meta property="og:title" content="Photographs | Shorecrest Studio">
-  <meta property="og:description" content="Every photograph from two road trips across the American West.">
+  <meta property="og:description" content="Photography collections by Helal Safi: coastlines, mountains, waterfalls, wildlife and night skies.">
   <meta property="og:url" content="https://shorecrest.studio/photographs.html">
   <meta property="og:image" content="https://shorecrest.studio/assets/img/og/studio.jpg">
   <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/safi.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/studio.css">
+  <link rel="stylesheet" href="assets/css/studio.css?v=20261006">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -31,8 +31,8 @@
   <header class="hdr" data-theme="light">
     <a class="hdr__brand" href="index.html" aria-label="Shorecrest Studio home"><span class="hdr__logo" data-logo><img src="assets/brand/logo-primary.svg" alt="" width="168" height="63"></span><span class="hdr__studio">Studio</span></a>
     <nav class="hdr__nav" aria-label="Primary">
-      <a href="road-trip-2019.html">Road trip 2019</a>
-      <a href="45-days.html">45 days</a>
+      <a href="road-trip-2019.html">Grand Canyon 2019</a>
+      <a href="45-days.html">West Coast 2026</a>
       <a href="photographs.html" aria-current="page">Photographs</a>
       <a href="about.html">About</a>
     </nav>
@@ -45,8 +45,8 @@
   <div class="menu" id="menu">
     <svg class="menu__contour" data-contours="6" aria-hidden="true"></svg>
     <nav class="menu__links" aria-label="Mobile">
-      <a href="road-trip-2019.html"><span>Road trip 2019</span></a>
-      <a href="45-days.html"><span>45 days</span></a>
+      <a href="road-trip-2019.html"><span>Grand Canyon 2019</span></a>
+      <a href="45-days.html"><span>West Coast 2026</span></a>
       <a href="photographs.html"><span>Photographs</span></a>
       <a href="about.html"><span>About</span></a>
       <a href="https://shorecrest.store" data-store><span class="menu__sub">Prints at shorecrest.store</span></a>
@@ -59,18 +59,14 @@
       <div class="wrap gh__in">
         <div>
           <h1 class="h1" data-split>Every <em>photograph.</em></h1>
-          <p class="lead" data-reveal style="--d:150">Both trips, in the order they happened. Open one to see it larger, or to find where it was taken on the map.</p>
+          <p class="lead" data-reveal style="--d:150">Organized by what caught my eye. Choose a collection and take a closer look.</p>
         </div>
-        <div class="chips" data-reveal style="--d:250" role="group" aria-label="Show photographs from">
-          <button class="chip" type="button" aria-pressed="true" data-filter="all">Both trips <small></small></button>
-          <button class="chip" type="button" aria-pressed="false" data-filter="2019" style="--c: var(--trip-2019)"><i></i>Road trip 2019 <small></small></button>
-          <button class="chip" type="button" aria-pressed="false" data-filter="45-days" style="--c: var(--trip-45)"><i></i>45 days <small></small></button>
-        </div>
+        <div class="collection-tabs" data-gallery-tabs role="group" aria-label="Photo collections"></div>
       </div>
     </section>
 
     <section class="gal paper" data-header="light" aria-label="Photographs">
-      <div class="wrap" data-gallery></div>
+      <div class="wrap"><div class="collection-covers" data-gallery-covers></div><div data-gallery hidden></div></div>
     </section>
   </main>
 
@@ -79,13 +75,13 @@
       <div class="foot__grid">
         <div class="foot__brand">
           <a href="index.html" aria-label="Shorecrest Studio home"><span class="hdr__logo" data-logo><img src="assets/brand/logo-cloud.svg" alt="" width="210" height="79"></span><span class="hdr__studio">Studio</span></a>
-          <p>Photographs by Helal Safi, from two road trips across the American West.</p>
+          <p>Photographs by Helal Safi.</p>
         </div>
         <div class="foot__col">
           <h3>The trips</h3>
           <ul>
-            <li><a href="road-trip-2019.html">Road trip 2019</a></li>
-            <li><a href="45-days.html">45 days</a></li>
+            <li><a href="road-trip-2019.html">Grand Canyon 2019</a></li>
+            <li><a href="45-days.html">West Coast 2026</a></li>
             <li><a href="photographs.html">Every photograph</a></li>
           </ul>
         </div>
@@ -114,11 +110,12 @@
   </footer>
 
   <script src="assets/js/config.js"></script>
-  <script src="assets/js/data.js"></script>
+  <script src="assets/js/data.js?v=20261006"></script>
   <script src="assets/js/logo-data.js"></script>
   <script src="assets/vendor/lenis.min.js"></script>
-  <script src="assets/js/core.js"></script>
+  <script src="assets/js/core.js?v=20261006"></script>
   <script src="assets/js/viewer.js"></script>
-  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/gallery.js?v=20261006"></script>
 </body>
 </html>
+

@@ -6,7 +6,7 @@
   var ST = window.ST, $ = ST.$, $$ = ST.$$;
 
   /* ---------------------------------------------------------------- slideshow */
-  var SLIDES = ["SC-019", "SC-058", "SC-001", "SC-025", "SC-022", "SC-043", "SC-039"];
+  var SLIDES = ["SC-001", "SC-003", "new-crescentlake", "new-burney-falls", "new-animal2", "new-night4", "SC-025"];
   var FOCUS = { "SC-001": "50% 60%", "SC-022": "50% 62%", "SC-043": "50% 60%", "SC-039": "50% 40%" };
   var DUR = 7000;
 
@@ -169,19 +169,34 @@
   }
 
   /* ---------------------------------------------------------------- a few favorites */
-  var FAVORITES = ["SC-019", "SC-003", "2019-horseshoebay", "SC-059", "2019-whitesands", "SC-030", "SC-018", "SC-021", "SC-044", "SC-001", "2019-mesaverde2", "SC-025"];
+  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "new-night4", "SC-003", "new-animal4", "new-burney-falls", "new-winslow", "SC-025", "new-night3"];
   function favorites() {
-    var el = $("[data-selection]");
-    if (!el) return;
-    var list = FAVORITES.map(function (id) { return ST.photoById[id]; }).filter(Boolean);
-    var g = ST.jrows(el, list, {
-      height: function (W) { return W < 600 ? 150 : W < 1000 ? 220 : 320; },
-      onOpen: function (photos, i, tile) {
-        ST.viewer.open(photos, i, tile, { findTile: function (p) { return g.tiles[photos.indexOf(p)]; } });
+    var el = $("[data-selection]"), tabs = $("[data-collection-tabs]");
+    if (!el || !tabs) return;
+    var choices = [{ id: "favorites", name: "Favorites" }].concat(ST.collections), g = null;
+    tabs.innerHTML = choices.map(function (c) {
+      return '<button class="chip" type="button" data-collection="' + c.id + '" aria-pressed="false">' + ST.esc(c.name) + '</button>';
+    }).join("");
+    function show(id) {
+      var list = id === "favorites" ? FAVORITES.map(function (pid) { return ST.photoById[pid]; }).filter(Boolean) : ST.collectionPhotos(id).slice(0, 8);
+      if (g && g.destroy) g.destroy();
+      g = ST.jrows(el, list, {
+        height: function (W) { return W < 600 ? 160 : W < 1000 ? 240 : 330; },
+        onOpen: function (photos, i, tile) {
+          ST.viewer.open(photos, i, tile, { findTile: function (p) { return g.tiles[photos.indexOf(p)]; } });
+        }
+      });
+      $$("[data-collection]", tabs).forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-collection") === id ? "true" : "false"); });
+      var link = $(".sel-foot a");
+      if (link) {
+        link.href = "photographs.html" + (id === "favorites" ? "" : "?collection=" + encodeURIComponent(id));
+        link.firstChild.textContent = id === "favorites" ? "Browse the collections " : "See the full collection ";
       }
-    });
-    var more = $("[data-count]");
-    if (more) more.textContent = ST.photos.length;
+      if (!ST.reduce) g.tiles.forEach(function (t, i) { t.style.setProperty("--n", i % 12); t.classList.add("is-in-anim"); });
+      ST.refresh();
+    }
+    $$("[data-collection]", tabs).forEach(function (b) { b.addEventListener("click", function () { show(b.getAttribute("data-collection")); }); });
+    show("favorites");
   }
 
   slideshow();
@@ -191,3 +206,4 @@
     favorites();
   });
 })();
+

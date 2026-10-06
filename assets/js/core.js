@@ -44,6 +44,7 @@
   /* ---------------------------------------------------------------- photographs + trips */
   ST.photos = window.ST_PHOTOS || [];
   ST.trips = window.ST_TRIPS || [];
+  ST.collections = window.ST_COLLECTIONS || [];
   ST.photoById = {};
   ST.photos.forEach(function (p) { ST.photoById[p.id] = p; });
   ST.trip = function (id) { for (var i = 0; i < ST.trips.length; i++) if (ST.trips[i].id === id) return ST.trips[i]; return null; };
@@ -54,6 +55,11 @@
     return null;
   };
   ST.tripPhotos = function (tripId) { return ST.photos.filter(function (p) { return p.trip === tripId; }); };
+  ST.collection = function (id) { return ST.collections.filter(function (c) { return c.id === id; })[0] || null; };
+  ST.collectionPhotos = function (id) {
+    var c = ST.collection(id);
+    return c ? c.photos.map(function (pid) { return ST.photoById[pid]; }).filter(Boolean) : [];
+  };
   var PATH = "assets/img/photo/";
   ST.src = function (p, w) {
     var dpr = Math.min(window.devicePixelRatio || 1, 2), want = w * dpr, pick = p.s[p.s.length - 1];
@@ -358,28 +364,35 @@
     }
     layout();
     ST.fadeImages(el);
-    var lw = el.clientWidth;
-    window.addEventListener("resize", ST.debounce(function () { if (Math.abs(el.clientWidth - lw) > 1) { lw = el.clientWidth; layout(); } }, 120));
-    el.addEventListener("click", function (e) {
+    var lw = el.clientWidth, observers = [];
+    var onResize = ST.debounce(function () { if (Math.abs(el.clientWidth - lw) > 1) { lw = el.clientWidth; layout(); } }, 120);
+    window.addEventListener("resize", onResize);
+    function onClick(e) {
       var a = e.target.closest(".jph");
       if (!a || e.metaKey || e.ctrlKey) return;
       e.preventDefault();
       var i = +a.getAttribute("data-i");
       if (opts.onOpen) opts.onOpen(list, i, a);
       else if (ST.viewer) ST.viewer.open(list, i, a);
-    });
+    }
+    el.addEventListener("click", onClick);
     if (opts.animate !== false) {
       tiles.forEach(function (t) {
         if (!io || reduce) return;
         var o = new IntersectionObserver(function (es) {
           if (es[0].isIntersecting) { t.classList.add("is-in-anim"); o.disconnect(); }
         }, { rootMargin: "0px 0px -4% 0px" });
+        observers.push(o);
         t.style.opacity = "0";
         o.observe(t);
         t.addEventListener("animationstart", function () { t.style.opacity = ""; }, { once: true });
       });
     }
-    return { layout: layout, tiles: tiles };
+    return { layout: layout, tiles: tiles, destroy: function () {
+      window.removeEventListener("resize", onResize);
+      el.removeEventListener("click", onClick);
+      observers.forEach(function (o) { o.disconnect(); });
+    } };
   };
 
   /* ---------------------------------------------------------------- boot */

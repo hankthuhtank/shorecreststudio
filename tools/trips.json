@@ -9,8 +9,8 @@
     {
       "id": "2019",
       "page": "road-trip-2019.html",
-      "name": "Road trip 2019",
-      "title": "Road trip <em>2019.</em>",
+      "name": "Grand Canyon 2019",
+      "title": "Grand Canyon <em>2019.</em>",
       "subtitle": "San Marcos to Paris, Texas, the long way around. Nine days through Texas, New Mexico, Arizona, Utah and Colorado.",
       "story": [
         "Nine days and a lot of desert. I drove straight west out of San Marcos to the Guadalupe Mountains, went down into Carlsbad Caverns, out onto White Sands, and up to the Grand Canyon and Zion.",
@@ -20,54 +20,190 @@
       "cover": "2019-horseshoebay",
       "days": true,
       "stops": [
-        { "id": "san-marcos", "name": "San Marcos", "region": "Texas", "lat": 29.8833, "lng": -97.9414, "stay": "Day 1",
-          "story": "Started in San Marcos and drove straight west." },
-        { "id": "guadalupe-peak", "name": "Guadalupe Peak", "region": "Texas", "lat": 31.8946, "lng": -104.8205, "stay": "Day 1, camped",
+        {
+          "id": "san-marcos",
+          "name": "San Marcos",
+          "region": "Texas",
+          "lat": 29.8833,
+          "lng": -97.9414,
+          "stay": "Day 1",
+          "story": "Started in San Marcos and drove straight west."
+        },
+        {
+          "id": "guadalupe-peak",
+          "name": "Guadalupe Peak",
+          "region": "Texas",
+          "lat": 31.8946,
+          "lng": -104.8205,
+          "stay": "Day 1, camped",
           "story": "Camped the first night at Guadalupe Peak, the highest point in Texas.",
-          "photos": ["2019-guadalupepeak"] },
-        { "id": "carlsbad-caverns", "name": "Carlsbad Caverns", "region": "New Mexico", "lat": 32.1752, "lng": -104.4437, "stay": "Day 2",
+          "photos": [
+            "2019-guadalupepeak"
+          ]
+        },
+        {
+          "id": "carlsbad-caverns",
+          "name": "Carlsbad Caverns",
+          "region": "New Mexico",
+          "lat": 32.1752,
+          "lng": -104.4437,
+          "stay": "Day 2",
           "story": "The next morning, down into Carlsbad Caverns.",
-          "photos": ["2019-carlsbad2", "2019-carlsbad", "2019-carlsbad3"] },
-        { "id": "bottomless-lakes", "name": "Bottomless Lakes", "region": "New Mexico", "lat": 33.3157, "lng": -104.3326, "stay": "Day 2, camped",
-          "story": "Camped that night at Bottomless Lakes State Park." },
-        { "id": "roswell", "name": "Roswell", "region": "New Mexico", "lat": 33.3943, "lng": -104.523, "stay": "Day 3",
-          "story": "Day three started in Roswell." },
-        { "id": "albuquerque", "name": "Albuquerque", "region": "New Mexico", "lat": 35.0844, "lng": -106.6504, "stay": "Day 3, one night",
-          "story": "Then north for a night in Albuquerque." },
-        { "id": "white-sands", "name": "White Sands", "region": "New Mexico", "lat": 32.7797, "lng": -106.1717, "stay": "Day 4",
+          "photos": [
+            "2019-carlsbad2",
+            "2019-carlsbad",
+            "2019-carlsbad3"
+          ]
+        },
+        {
+          "id": "bottomless-lakes",
+          "name": "Bottomless Lakes",
+          "region": "New Mexico",
+          "lat": 33.3157,
+          "lng": -104.3326,
+          "stay": "Day 2, camped",
+          "story": "Camped that night at Bottomless Lakes State Park."
+        },
+        {
+          "id": "roswell",
+          "name": "Roswell",
+          "region": "New Mexico",
+          "lat": 33.3943,
+          "lng": -104.523,
+          "stay": "Day 3",
+          "story": "Day three started in Roswell."
+        },
+        {
+          "id": "albuquerque",
+          "name": "Albuquerque",
+          "region": "New Mexico",
+          "lat": 35.0844,
+          "lng": -106.6504,
+          "stay": "Day 3, one night",
+          "story": "Then north for a night in Albuquerque."
+        },
+        {
+          "id": "white-sands",
+          "name": "White Sands",
+          "region": "New Mexico",
+          "lat": 32.7797,
+          "lng": -106.1717,
+          "stay": "Day 4",
           "story": "Day four, out onto White Sands.",
-          "photos": ["2019-whitesands"] },
-        { "id": "winslow", "name": "Winslow", "region": "Arizona", "lat": 35.0242, "lng": -110.6974, "stay": "Day 4",
+          "photos": [
+            "2019-whitesands"
+          ]
+        },
+        {
+          "id": "winslow",
+          "name": "Winslow",
+          "region": "Arizona",
+          "lat": 35.0242,
+          "lng": -110.6974,
+          "stay": "Day 4",
           "story": "Then west into Arizona, all the way to Winslow.",
-          "photos": ["2019-arizona3", "2019-arizona"] },
-        { "id": "grand-canyon", "name": "Grand Canyon", "region": "Arizona", "lat": 36.0544, "lng": -112.1401, "stay": "Day 5, camped",
+          "photos": [
+            "2019-arizona3",
+            "2019-arizona"
+          ]
+        },
+        {
+          "id": "grand-canyon",
+          "name": "Grand Canyon",
+          "region": "Arizona",
+          "lat": 36.0544,
+          "lng": -112.1401,
+          "stay": "Day 5, camped",
           "story": "From Winslow, straight to the Grand Canyon. Camped a night there.",
-          "photos": ["2019-grandcanyon2", "2019-grandcanyon", "2019-arizona2"] },
-        { "id": "horseshoe-bend", "name": "Horseshoe Bend", "region": "Arizona", "lat": 36.8791, "lng": -111.5104, "stay": "Day 6",
+          "photos": [
+            "2019-grandcanyon2",
+            "2019-grandcanyon",
+            "2019-arizona2"
+          ]
+        },
+        {
+          "id": "horseshoe-bend",
+          "name": "Horseshoe Bend",
+          "region": "Arizona",
+          "lat": 36.8791,
+          "lng": -111.5104,
+          "stay": "Day 6",
           "story": "Up to Horseshoe Bend the next morning.",
-          "via": [{ "lat": 36.0402, "lng": -111.8261, "label": "Desert View" }],
-          "photos": ["2019-horseshoebay"] },
-        { "id": "zion", "name": "Zion", "region": "Utah", "lat": 37.2002, "lng": -112.9877, "stay": "Day 6, camped",
+          "via": [
+            {
+              "lat": 36.0402,
+              "lng": -111.8261,
+              "label": "Desert View"
+            }
+          ],
+          "photos": [
+            "2019-horseshoebay"
+          ]
+        },
+        {
+          "id": "zion",
+          "name": "Zion",
+          "region": "Utah",
+          "lat": 37.2002,
+          "lng": -112.9877,
+          "stay": "Day 6, camped",
           "story": "Then on to Zion, and another night camping.",
-          "photos": ["2019-zion", "2019-utah"] },
-        { "id": "mesa-verde", "name": "Mesa Verde", "region": "Colorado", "lat": 37.1838, "lng": -108.4887, "stay": "Day 7",
+          "photos": [
+            "2019-zion",
+            "2019-utah"
+          ]
+        },
+        {
+          "id": "mesa-verde",
+          "name": "Mesa Verde",
+          "region": "Colorado",
+          "lat": 37.1838,
+          "lng": -108.4887,
+          "stay": "Day 7",
           "story": "From Zion, straight east into Colorado to Mesa Verde.",
-          "photos": ["2019-mesaverde2", "2019-mesaverde"] },
-        { "id": "durango", "name": "Durango", "region": "Colorado", "lat": 37.2753, "lng": -107.8801, "stay": "Day 7, one night",
-          "story": "And a night in Durango." },
-        { "id": "lubbock", "name": "Near Lubbock", "region": "Texas", "lat": 33.5779, "lng": -101.8552, "stay": "Day 8, one night",
+          "photos": [
+            "2019-mesaverde2",
+            "2019-mesaverde"
+          ]
+        },
+        {
+          "id": "durango",
+          "name": "Durango",
+          "region": "Colorado",
+          "lat": 37.2753,
+          "lng": -107.8801,
+          "stay": "Day 7, one night",
+          "story": "And a night in Durango."
+        },
+        {
+          "id": "lubbock",
+          "name": "Near Lubbock",
+          "region": "Texas",
+          "lat": 33.5779,
+          "lng": -101.8552,
+          "stay": "Day 8, one night",
           "story": "Back into Texas the next day, with a night near Lubbock.",
-          "photos": ["2019-texas"] },
-        { "id": "paris", "name": "Paris", "region": "Texas", "lat": 33.6609, "lng": -95.5555, "stay": "Day 9",
-          "story": "Then home to Paris, Texas." }
+          "photos": [
+            "2019-texas"
+          ]
+        },
+        {
+          "id": "paris",
+          "name": "Paris",
+          "region": "Texas",
+          "lat": 33.6609,
+          "lng": -95.5555,
+          "stay": "Day 9",
+          "story": "Then home to Paris, Texas."
+        }
       ],
       "landmarks": []
     },
     {
       "id": "45-days",
       "page": "45-days.html",
-      "name": "45 days",
-      "title": "Forty-five <em>days.</em>",
+      "name": "West Coast 2026",
+      "title": "West Coast <em>2026.</em>",
       "subtitle": "Broken Bow, Oklahoma, to Paris, Texas, by way of the Pacific. March 1 to April 14.",
       "story": [
         "I left a cabin in Broken Bow on the morning of March 1 and rolled into Paris, Texas, on April 14.",
@@ -76,138 +212,770 @@
       "color": "#21463a",
       "cover": "SC-058",
       "stops": [
-        { "id": "broken-bow", "name": "Broken Bow", "region": "Oklahoma", "lat": 34.0293, "lng": -94.7391, "stay": "Where it started",
-          "story": "A cabin with friends to start it off. I left the morning of March 1." },
-        { "id": "meers", "name": "Meers", "region": "Oklahoma", "lat": 34.7826, "lng": -98.5823, "stay": "One night",
-          "story": "A night with an old friend in Meers." },
-        { "id": "winslow", "name": "Winslow", "region": "Arizona", "lat": 35.0242, "lng": -110.6974, "stay": "One night",
-          "story": "Drove straight through New Mexico and stopped in Winslow, because of my love for the Eagles." },
-        { "id": "grand-canyon", "name": "Grand Canyon", "region": "Arizona", "lat": 36.0544, "lng": -112.1401, "stay": "One night",
+        {
+          "id": "broken-bow",
+          "name": "Broken Bow",
+          "region": "Oklahoma",
+          "lat": 34.0293,
+          "lng": -94.7391,
+          "stay": "Where it started",
+          "story": "A cabin with friends to start it off. I left the morning of March 1."
+        },
+        {
+          "id": "meers",
+          "name": "Meers",
+          "region": "Oklahoma",
+          "lat": 34.7826,
+          "lng": -98.5823,
+          "stay": "One night",
+          "story": "A night with an old friend in Meers."
+        },
+        {
+          "id": "winslow",
+          "name": "Winslow",
+          "region": "Arizona",
+          "lat": 35.0242,
+          "lng": -110.6974,
+          "stay": "One night",
+          "story": "Drove straight through New Mexico and stopped in Winslow, because of my love for the Eagles.",
+          "photos": [
+            "new-winslow"
+          ]
+        },
+        {
+          "id": "grand-canyon",
+          "name": "Grand Canyon",
+          "region": "Arizona",
+          "lat": 36.0544,
+          "lng": -112.1401,
+          "stay": "One night",
           "story": "In at the South Rim, then along the rim from west to east.",
-          "photos": ["SC-021", "SC-023"] },
-        { "id": "zion", "name": "Zion", "region": "Utah", "lat": 37.2002, "lng": -112.9877, "stay": "One night",
+          "photos": [
+            "SC-021",
+            "SC-023"
+          ]
+        },
+        {
+          "id": "zion",
+          "name": "Zion",
+          "region": "Utah",
+          "lat": 37.2002,
+          "lng": -112.9877,
+          "stay": "One night",
           "story": "Up past Lake Powell and on to Zion for a night.",
-          "via": [{ "lat": 36.0402, "lng": -111.8261, "label": "Desert View" }, { "lat": 36.9147, "lng": -111.4558 }],
-          "photos": ["SC-061", { "id": "SC-022", "at": [36.9643, -111.4846], "place": "Lake Powell, Arizona" }, "SC-062", "SC-063", "SC-064", "SC-065"] },
-        { "id": "las-vegas", "name": "Las Vegas", "region": "Nevada", "lat": 36.1147, "lng": -115.1728, "stay": "One night",
-          "story": "A night in Vegas." },
-        { "id": "death-valley", "name": "Death Valley", "region": "California", "lat": 36.4622, "lng": -116.8669, "stay": "Passing through",
-          "story": "Through Death Valley, then west toward Mount Whitney." },
-        { "id": "lone-pine", "name": "Lone Pine", "region": "California", "lat": 36.606, "lng": -118.0629, "stay": "Camped one night",
-          "story": "Camped outside Lone Pine, in the shadow of Mount Whitney." },
-        { "id": "lake-isabella", "name": "Lake Isabella", "region": "California", "lat": 35.6458, "lng": -118.4632, "stay": "Camped one night",
+          "via": [
+            {
+              "lat": 36.0402,
+              "lng": -111.8261,
+              "label": "Desert View"
+            },
+            {
+              "lat": 36.9147,
+              "lng": -111.4558
+            }
+          ],
+          "photos": [
+            "SC-061",
+            {
+              "id": "SC-022",
+              "at": [
+                36.9643,
+                -111.4846
+              ],
+              "place": "Lake Powell, Arizona"
+            },
+            "SC-062",
+            "SC-063",
+            "SC-064",
+            "SC-065"
+          ]
+        },
+        {
+          "id": "las-vegas",
+          "name": "Las Vegas",
+          "region": "Nevada",
+          "lat": 36.1147,
+          "lng": -115.1728,
+          "stay": "One night",
+          "story": "A night in Vegas.",
+          "photos": [
+            "new-vegas"
+          ]
+        },
+        {
+          "id": "death-valley",
+          "name": "Death Valley",
+          "region": "California",
+          "lat": 36.4622,
+          "lng": -116.8669,
+          "stay": "Passing through",
+          "story": "Through Death Valley, then west toward Mount Whitney.",
+          "photos": [
+            "new-deathvalley"
+          ]
+        },
+        {
+          "id": "lone-pine",
+          "name": "Lone Pine",
+          "region": "California",
+          "lat": 36.606,
+          "lng": -118.0629,
+          "stay": "Camped one night",
+          "story": "Camped outside Lone Pine, in the shadow of Mount Whitney.",
+          "photos": [
+            "new-mt-whitney"
+          ]
+        },
+        {
+          "id": "lake-isabella",
+          "name": "Lake Isabella",
+          "region": "California",
+          "lat": 35.6458,
+          "lng": -118.4632,
+          "stay": "Camped one night",
           "story": "Down south to Lake Isabella, and a night camped right on the beach.",
-          "photos": ["SC-007", "SC-010", { "id": "SC-005", "at": [35.663, -118.028], "place": "On the way to Lake Isabella" }] },
-        { "id": "kern-river", "name": "Kern River", "region": "California", "lat": 35.7547, "lng": -118.4253, "stay": "Passing through",
+          "photos": [
+            "SC-007",
+            "SC-010",
+            {
+              "id": "SC-005",
+              "at": [
+                35.663,
+                -118.028
+              ],
+              "place": "On the way to Lake Isabella"
+            }
+          ]
+        },
+        {
+          "id": "kern-river",
+          "name": "Kern River",
+          "region": "California",
+          "lat": 35.7547,
+          "lng": -118.4253,
+          "stay": "Passing through",
           "story": "Up to Kernville and the Kern River.",
-          "photos": ["SC-008", "SC-014", "SC-009"] },
-        { "id": "sequoia", "name": "Sequoia", "region": "California", "lat": 36.5647, "lng": -118.7738, "stay": "One night",
+          "photos": [
+            "SC-008",
+            "SC-014",
+            "SC-009"
+          ]
+        },
+        {
+          "id": "sequoia",
+          "name": "Sequoia",
+          "region": "California",
+          "lat": 36.5647,
+          "lng": -118.7738,
+          "stay": "One night",
           "story": "Back down, then up toward Sequoia National Forest and the park on a scenic road through the mountains.",
-          "via": [{ "lat": 35.7286, "lng": -118.7059 }],
-          "photos": ["SC-039", "SC-040", "SC-006", "SC-011"] },
-        { "id": "oakhurst", "name": "Oakhurst", "region": "California", "lat": 37.328, "lng": -119.6493, "stay": "One night",
+          "via": [
+            {
+              "lat": 35.7286,
+              "lng": -118.7059
+            }
+          ],
+          "photos": [
+            "SC-039",
+            "SC-040",
+            "SC-006",
+            "SC-011"
+          ]
+        },
+        {
+          "id": "oakhurst",
+          "name": "Oakhurst",
+          "region": "California",
+          "lat": 37.328,
+          "lng": -119.6493,
+          "stay": "One night",
           "story": "A night in Oakhurst, in the foothills below Yosemite.",
-          "photos": ["SC-013", "SC-012"] },
-        { "id": "yosemite", "name": "Yosemite", "region": "California", "lat": 37.7456, "lng": -119.5936, "stay": "Camped one night",
+          "photos": [
+            "SC-013",
+            "SC-012"
+          ]
+        },
+        {
+          "id": "yosemite",
+          "name": "Yosemite",
+          "region": "California",
+          "lat": 37.7456,
+          "lng": -119.5936,
+          "stay": "Camped one night",
           "story": "Then camped in Yosemite.",
-          "photos": ["SC-058", "SC-060", "SC-059"] },
-        { "id": "big-sur", "name": "Big Sur", "region": "California", "lat": 36.2704, "lng": -121.8081, "stay": "One night",
+          "photos": [
+            "SC-058",
+            "SC-060",
+            "SC-059"
+          ]
+        },
+        {
+          "id": "big-sur",
+          "name": "Big Sur",
+          "region": "California",
+          "lat": 36.2704,
+          "lng": -121.8081,
+          "stay": "One night",
           "story": "All the way west to Big Sur.",
-          "photos": ["SC-003", "SC-001", "SC-004", "SC-002"] },
-        { "id": "san-francisco", "name": "San Francisco", "region": "California", "lat": 37.8199, "lng": -122.4783, "stay": "Passing through",
+          "photos": [
+            "SC-003",
+            "SC-001",
+            "SC-004",
+            "SC-002"
+          ]
+        },
+        {
+          "id": "san-francisco",
+          "name": "San Francisco",
+          "region": "California",
+          "lat": 37.8199,
+          "lng": -122.4783,
+          "stay": "Passing through",
           "story": "North on Highway 1, through San Francisco and over the Golden Gate.",
-          "via": [{ "lat": 36.9741, "lng": -122.0308 }, { "lat": 37.4636, "lng": -122.4286 }],
-          "photos": ["SC-020"] },
-        { "id": "fort-bragg", "name": "Fort Bragg", "region": "California", "lat": 39.4457, "lng": -123.8053, "stay": "Two nights on the coast",
+          "via": [
+            {
+              "lat": 36.9741,
+              "lng": -122.0308
+            },
+            {
+              "lat": 37.4636,
+              "lng": -122.4286
+            }
+          ],
+          "photos": [
+            "SC-020"
+          ]
+        },
+        {
+          "id": "fort-bragg",
+          "name": "Fort Bragg",
+          "region": "California",
+          "lat": 39.4457,
+          "lng": -123.8053,
+          "stay": "Two nights on the coast",
           "story": "Up the coast on Highway 1, all the way to Fort Bragg. Two nights along this stretch.",
-          "via": [{ "lat": 37.9005, "lng": -122.6444 }, { "lat": 38.3332, "lng": -123.0481 }, { "lat": 38.4502, "lng": -123.1159 }, { "lat": 38.9088, "lng": -123.6931 }, { "lat": 39.3077, "lng": -123.7995 }] },
-        { "id": "lake-tahoe", "name": "Lake Tahoe", "region": "California and Nevada", "lat": 39.1677, "lng": -120.1452, "stay": "Two nights",
+          "via": [
+            {
+              "lat": 37.9005,
+              "lng": -122.6444
+            },
+            {
+              "lat": 38.3332,
+              "lng": -123.0481
+            },
+            {
+              "lat": 38.4502,
+              "lng": -123.1159
+            },
+            {
+              "lat": 38.9088,
+              "lng": -123.6931
+            },
+            {
+              "lat": 39.3077,
+              "lng": -123.7995
+            }
+          ]
+        },
+        {
+          "id": "lake-tahoe",
+          "name": "Lake Tahoe",
+          "region": "California and Nevada",
+          "lat": 39.1677,
+          "lng": -120.1452,
+          "stay": "Two nights",
           "story": "East to Lake Tahoe, and all the way around it. One night on the north shore, one on the south.",
           "distanceNote": "including the drive around the lake",
-          "via": [{ "lat": 39.328, "lng": -120.1833 }],
-          "after": [{ "lat": 39.2377, "lng": -120.0266 }, { "lat": 39.2513, "lng": -119.9729 }, { "lat": 39.0055, "lng": -119.9449 }, { "lat": 38.9399, "lng": -119.9772 }, { "lat": 38.9545, "lng": -120.1105, "label": "Emerald Bay" }, { "lat": 39.1677, "lng": -120.1452 }],
-          "photos": ["SC-044", "SC-043", "SC-046", "SC-047", "SC-045"] },
-        { "id": "burney-falls", "name": "Burney Falls", "region": "California", "lat": 41.012, "lng": -121.651, "stay": "Change of plans",
+          "via": [
+            {
+              "lat": 39.328,
+              "lng": -120.1833
+            }
+          ],
+          "after": [
+            {
+              "lat": 39.2377,
+              "lng": -120.0266
+            },
+            {
+              "lat": 39.2513,
+              "lng": -119.9729
+            },
+            {
+              "lat": 39.0055,
+              "lng": -119.9449
+            },
+            {
+              "lat": 38.9399,
+              "lng": -119.9772
+            },
+            {
+              "lat": 38.9545,
+              "lng": -120.1105,
+              "label": "Emerald Bay"
+            },
+            {
+              "lat": 39.1677,
+              "lng": -120.1452
+            }
+          ],
+          "photos": [
+            "SC-044",
+            "SC-043",
+            "SC-046",
+            "SC-047",
+            "SC-045"
+          ]
+        },
+        {
+          "id": "burney-falls",
+          "name": "Burney Falls",
+          "region": "California",
+          "lat": 41.012,
+          "lng": -121.651,
+          "stay": "Change of plans",
           "story": "Lassen was closed when I got there, so I went to Burney Falls instead.",
-          "via": [{ "lat": 39.9368, "lng": -120.9472 }, { "lat": 40.4378, "lng": -121.5337, "label": "Lassen, closed" }, { "lat": 40.3063, "lng": -121.0058 }, { "lat": 40.6768, "lng": -121.4244 }] },
-        { "id": "mount-shasta", "name": "Mount Shasta", "region": "California", "lat": 41.6527, "lng": -122.17, "stay": "One night",
+          "via": [
+            {
+              "lat": 39.9368,
+              "lng": -120.9472
+            },
+            {
+              "lat": 40.4378,
+              "lng": -121.5337,
+              "label": "Lassen, closed"
+            },
+            {
+              "lat": 40.3063,
+              "lng": -121.0058
+            },
+            {
+              "lat": 40.6768,
+              "lng": -121.4244
+            }
+          ],
+          "photos": [
+            "new-burney-falls"
+          ]
+        },
+        {
+          "id": "mount-shasta",
+          "name": "Mount Shasta",
+          "region": "California",
+          "lat": 41.6527,
+          "lng": -122.17,
+          "stay": "One night",
           "story": "A night at Grass Lake, north of Mount Shasta.",
-          "via": [{ "lat": 41.2557, "lng": -122.1394 }, { "lat": 41.3099, "lng": -122.3106 }],
-          "photos": ["SC-042", "SC-041"] },
-        { "id": "crater-lake", "name": "Crater Lake", "region": "Oregon", "lat": 42.9105, "lng": -122.1434, "stay": "Passing through",
+          "via": [
+            {
+              "lat": 41.2557,
+              "lng": -122.1394
+            },
+            {
+              "lat": 41.3099,
+              "lng": -122.3106
+            }
+          ],
+          "photos": [
+            "SC-042",
+            "SC-041"
+          ]
+        },
+        {
+          "id": "crater-lake",
+          "name": "Crater Lake",
+          "region": "Oregon",
+          "lat": 42.9105,
+          "lng": -122.1434,
+          "stay": "Passing through",
           "story": "Most of the park was under a ton of snow. I got one solid view of the whole lake.",
-          "photos": ["SC-018"] },
-        { "id": "toketee-falls", "name": "Toketee Falls", "region": "Oregon", "lat": 43.2635, "lng": -122.4339, "stay": "Passing through",
+          "photos": [
+            "SC-018"
+          ]
+        },
+        {
+          "id": "toketee-falls",
+          "name": "Toketee Falls",
+          "region": "Oregon",
+          "lat": 43.2635,
+          "lng": -122.4339,
+          "stay": "Passing through",
           "story": "West past a string of waterfalls, Clearwater and Toketee among them.",
-          "via": [{ "lat": 42.9068, "lng": -122.4489 }, { "lat": 43.2489, "lng": -122.231, "label": "Clearwater Falls" }],
-          "photos": ["SC-034"] },
-        { "id": "coos-bay", "name": "Coos Bay", "region": "Oregon", "lat": 43.3665, "lng": -124.2179, "stay": "One night",
-          "story": "Straight to the Oregon coast for a night in Coos Bay." },
-        { "id": "poulsbo", "name": "Poulsbo", "region": "Washington", "lat": 47.7359, "lng": -122.6465, "stay": "Seven days",
-          "story": "Up to Poulsbo, where my brother lives. I stayed seven days." },
-        { "id": "olympic", "name": "Olympic Peninsula", "region": "Washington", "lat": 48.0581, "lng": -123.7996, "stay": "Day trips from Poulsbo",
+          "via": [
+            {
+              "lat": 42.9068,
+              "lng": -122.4489
+            },
+            {
+              "lat": 43.2489,
+              "lng": -122.231,
+              "label": "Clearwater Falls"
+            }
+          ],
+          "photos": [
+            "SC-034",
+            "new-toketee-falls",
+            "new-toketee-falls2"
+          ]
+        },
+        {
+          "id": "coos-bay",
+          "name": "Coos Bay",
+          "region": "Oregon",
+          "lat": 43.3665,
+          "lng": -124.2179,
+          "stay": "One night",
+          "story": "Straight to the Oregon coast for a night in Coos Bay."
+        },
+        {
+          "id": "poulsbo",
+          "name": "Poulsbo",
+          "region": "Washington",
+          "lat": 47.7359,
+          "lng": -122.6465,
+          "stay": "Seven days",
+          "story": "Up to Poulsbo, where my brother lives. I stayed seven days."
+        },
+        {
+          "id": "olympic",
+          "name": "Olympic Peninsula",
+          "region": "Washington",
+          "lat": 48.0581,
+          "lng": -123.7996,
+          "stay": "Day trips from Poulsbo",
           "story": "While I was there: Hurricane Ridge and Lake Crescent, then out toward Ruby Beach and back.",
           "distanceNote": "round trip from Poulsbo",
-          "via": [{ "lat": 47.9697, "lng": -123.4983, "label": "Hurricane Ridge" }],
-          "after": [{ "lat": 47.7106, "lng": -124.4152, "label": "Ruby Beach" }, { "lat": 47.7359, "lng": -122.6465 }] },
-        { "id": "rainier", "name": "Mount Rainier", "region": "Washington", "lat": 46.786, "lng": -121.735, "stay": "Passing through",
+          "via": [
+            {
+              "lat": 47.9697,
+              "lng": -123.4983,
+              "label": "Hurricane Ridge"
+            }
+          ],
+          "after": [
+            {
+              "lat": 47.7106,
+              "lng": -124.4152,
+              "label": "Ruby Beach"
+            },
+            {
+              "lat": 47.7359,
+              "lng": -122.6465
+            }
+          ],
+          "photos": [
+            "new-crescentlake"
+          ]
+        },
+        {
+          "id": "rainier",
+          "name": "Mount Rainier",
+          "region": "Washington",
+          "lat": 46.786,
+          "lng": -121.735,
+          "stay": "Passing through",
           "story": "After a week in Poulsbo, Mount Rainier.",
-          "photos": ["SC-035"] },
-        { "id": "puyallup", "name": "Puyallup", "region": "Washington", "lat": 47.1957, "lng": -122.3, "stay": "One night",
-          "story": "Slept in the parking lot of the Big Whisky Saloon, a country dancing bar in Puyallup." },
-        { "id": "snoqualmie", "name": "Snoqualmie Falls", "region": "Washington", "lat": 47.5417, "lng": -121.8377, "stay": "Passing through",
-          "story": "A stop at Snoqualmie Falls on the way north." },
-        { "id": "north-cascades", "name": "North Cascades", "region": "Washington", "lat": 48.714, "lng": -121.1072, "stay": "Two nights",
+          "photos": [
+            "SC-035"
+          ]
+        },
+        {
+          "id": "puyallup",
+          "name": "Puyallup",
+          "region": "Washington",
+          "lat": 47.1957,
+          "lng": -122.3,
+          "stay": "One night",
+          "story": "Slept in the parking lot of the Big Whisky Saloon, a country dancing bar in Puyallup."
+        },
+        {
+          "id": "snoqualmie",
+          "name": "Snoqualmie Falls",
+          "region": "Washington",
+          "lat": 47.5417,
+          "lng": -121.8377,
+          "stay": "Passing through",
+          "story": "A stop at Snoqualmie Falls on the way north.",
+          "photos": [
+            "new-snoqualmee"
+          ]
+        },
+        {
+          "id": "north-cascades",
+          "name": "North Cascades",
+          "region": "Washington",
+          "lat": 48.714,
+          "lng": -121.1072,
+          "stay": "Two nights",
           "story": "Two days and two nights. One stormy day and one sunny one, and each had its own character.",
-          "photos": ["SC-031", "SC-032", "SC-033"] },
-        { "id": "leavenworth", "name": "Leavenworth", "region": "Washington", "lat": 47.5962, "lng": -120.6615, "stay": "One night",
+          "photos": [
+            "SC-031",
+            "SC-032",
+            "SC-033"
+          ]
+        },
+        {
+          "id": "leavenworth",
+          "name": "Leavenworth",
+          "region": "Washington",
+          "lat": 47.5962,
+          "lng": -120.6615,
+          "stay": "One night",
           "story": "Then east toward Glacier, with a night in Leavenworth.",
-          "via": [{ "lat": 47.8554, "lng": -121.9709 }] },
-        { "id": "spokane", "name": "Spokane", "region": "Washington", "lat": 47.6588, "lng": -117.426, "stay": "One night",
-          "story": "And another night in Spokane." },
-        { "id": "glacier", "name": "Glacier", "region": "Montana", "lat": 48.5285, "lng": -113.9877, "stay": "Two days",
+          "via": [
+            {
+              "lat": 47.8554,
+              "lng": -121.9709
+            }
+          ]
+        },
+        {
+          "id": "spokane",
+          "name": "Spokane",
+          "region": "Washington",
+          "lat": 47.6588,
+          "lng": -117.426,
+          "stay": "One night",
+          "story": "And another night in Spokane."
+        },
+        {
+          "id": "glacier",
+          "name": "Glacier",
+          "region": "Montana",
+          "lat": 48.5285,
+          "lng": -113.9877,
+          "stay": "Two days",
           "story": "Two days at Glacier.",
-          "photos": ["SC-019"] },
-        { "id": "yellowstone", "name": "Yellowstone", "region": "Wyoming and Montana", "lat": 44.9766, "lng": -110.7012, "stay": "Two nights",
+          "photos": [
+            "SC-019"
+          ]
+        },
+        {
+          "id": "yellowstone",
+          "name": "Yellowstone",
+          "region": "Wyoming and Montana",
+          "lat": 44.9766,
+          "lng": -110.7012,
+          "stay": "Two nights",
           "story": "Then Yellowstone for two nights.",
-          "via": [{ "lat": 46.8721, "lng": -113.994 }],
-          "photos": ["SC-054", "SC-053", "SC-055", "SC-052", "SC-056", "SC-057"] },
-        { "id": "grand-teton", "name": "Grand Teton", "region": "Wyoming", "lat": 43.656, "lng": -110.716, "stay": "Two nights",
+          "via": [
+            {
+              "lat": 46.8721,
+              "lng": -113.994
+            }
+          ],
+          "photos": [
+            "SC-054",
+            "SC-053",
+            "SC-055",
+            "SC-052",
+            "SC-056",
+            "SC-057"
+          ]
+        },
+        {
+          "id": "grand-teton",
+          "name": "Grand Teton",
+          "region": "Wyoming",
+          "lat": 43.656,
+          "lng": -110.716,
+          "stay": "Two nights",
           "story": "Two nights in the Tetons.",
-          "via": [{ "lat": 45.6627, "lng": -110.5605 }, { "lat": 45.2847, "lng": -111.3683 }, { "lat": 44.6621, "lng": -111.1041 }, { "lat": 43.723, "lng": -111.1113 }],
-          "photos": ["SC-030", "SC-025", "SC-024", "SC-029", "SC-026", "SC-027", "SC-028", "SC-038"] },
-        { "id": "steamboat", "name": "Steamboat Springs", "region": "Colorado", "lat": 40.485, "lng": -106.8317, "stay": "One night",
+          "via": [
+            {
+              "lat": 45.6627,
+              "lng": -110.5605
+            },
+            {
+              "lat": 45.2847,
+              "lng": -111.3683
+            },
+            {
+              "lat": 44.6621,
+              "lng": -111.1041
+            },
+            {
+              "lat": 43.723,
+              "lng": -111.1113
+            }
+          ],
+          "photos": [
+            "SC-030",
+            "SC-025",
+            "SC-024",
+            "SC-029",
+            "SC-026",
+            "SC-027",
+            "SC-028",
+            "SC-038"
+          ]
+        },
+        {
+          "id": "steamboat",
+          "name": "Steamboat Springs",
+          "region": "Colorado",
+          "lat": 40.485,
+          "lng": -106.8317,
+          "stay": "One night",
           "story": "South through Flaming Gorge to Steamboat Springs for a night.",
-          "via": [{ "lat": 41.5875, "lng": -109.2029 }, { "lat": 40.93, "lng": -109.392, "label": "Flaming Gorge" }, { "lat": 40.4555, "lng": -109.5287 }],
-          "photos": [{ "id": "SC-048", "at": [40.9147, -109.4214], "place": "Flaming Gorge, Utah" }] },
-        { "id": "rocky-mountain", "name": "Rocky Mountain", "region": "Colorado", "lat": 40.2663, "lng": -105.8318, "stay": "One night",
+          "via": [
+            {
+              "lat": 41.5875,
+              "lng": -109.2029
+            },
+            {
+              "lat": 40.93,
+              "lng": -109.392,
+              "label": "Flaming Gorge"
+            },
+            {
+              "lat": 40.4555,
+              "lng": -109.5287
+            }
+          ],
+          "photos": [
+            {
+              "id": "SC-048",
+              "at": [
+                40.9147,
+                -109.4214
+              ],
+              "place": "Flaming Gorge, Utah"
+            }
+          ]
+        },
+        {
+          "id": "rocky-mountain",
+          "name": "Rocky Mountain",
+          "region": "Colorado",
+          "lat": 40.2663,
+          "lng": -105.8318,
+          "stay": "One night",
           "story": "A night at Rocky Mountain National Park.",
-          "photos": ["SC-017", "SC-015"] },
-        { "id": "black-canyon", "name": "Black Canyon of the Gunnison", "region": "Colorado", "lat": 38.5754, "lng": -107.7416, "stay": "Two nights",
-          "story": "Two nights at the Black Canyon of the Gunnison." },
-        { "id": "telluride", "name": "Telluride", "region": "Colorado", "lat": 37.9375, "lng": -107.8123, "stay": "One night",
+          "photos": [
+            "SC-017",
+            "SC-015"
+          ]
+        },
+        {
+          "id": "black-canyon",
+          "name": "Black Canyon of the Gunnison",
+          "region": "Colorado",
+          "lat": 38.5754,
+          "lng": -107.7416,
+          "stay": "Two nights",
+          "story": "Two nights at the Black Canyon of the Gunnison."
+        },
+        {
+          "id": "telluride",
+          "name": "Telluride",
+          "region": "Colorado",
+          "lat": 37.9375,
+          "lng": -107.8123,
+          "stay": "One night",
           "story": "One night in Telluride.",
-          "photos": [{ "id": "SC-016", "at": [38.153, -107.824], "place": "On the way to Telluride" }] },
-        { "id": "paris", "name": "Paris", "region": "Texas", "lat": 33.6609, "lng": -95.5555, "stay": "April 14",
-          "story": "Back to Paris, Texas, on April 14. Exactly 45 days." }
+          "photos": [
+            {
+              "id": "SC-016",
+              "at": [
+                38.153,
+                -107.824
+              ],
+              "place": "On the way to Telluride"
+            }
+          ]
+        },
+        {
+          "id": "paris",
+          "name": "Paris",
+          "region": "Texas",
+          "lat": 33.6609,
+          "lng": -95.5555,
+          "stay": "April 14",
+          "story": "Back to Paris, Texas, on April 14. Exactly 45 days."
+        }
       ],
-      "unpinned": ["SC-036", "SC-037", "SC-049", "SC-050", "SC-051"],
+      "unpinned": [
+        "SC-036",
+        "SC-037",
+        "SC-049",
+        "SC-050",
+        "SC-051"
+      ],
       "landmarks": [
-        { "name": "Mount Whitney", "lat": 36.5785, "lng": -118.2923 },
-        { "name": "Mount Shasta", "lat": 41.4092, "lng": -122.1949 },
-        { "name": "Mount Rainier", "lat": 46.8523, "lng": -121.7603 },
-        { "name": "Mount Olympus", "lat": 47.8013, "lng": -123.7108 },
-        { "name": "Grand Teton", "lat": 43.741, "lng": -110.8024 }
+        {
+          "name": "Mount Whitney",
+          "lat": 36.5785,
+          "lng": -118.2923
+        },
+        {
+          "name": "Mount Shasta",
+          "lat": 41.4092,
+          "lng": -122.1949
+        },
+        {
+          "name": "Mount Rainier",
+          "lat": 46.8523,
+          "lng": -121.7603
+        },
+        {
+          "name": "Mount Olympus",
+          "lat": 47.8013,
+          "lng": -123.7108
+        },
+        {
+          "name": "Grand Teton",
+          "lat": 43.741,
+          "lng": -110.8024
+        }
       ]
     }
   ],
   "regions": [
-    { "name": "Pacific Ocean", "lat": 35.4, "lng": -125.9, "size": 22 },
-    { "name": "Sierra Nevada", "lat": 37.25, "lng": -118.95, "rotate": -48, "size": 15 },
-    { "name": "Cascade Range", "lat": 45.2, "lng": -121.55, "rotate": -78, "size": 15 },
-    { "name": "Rocky Mountains", "lat": 42.6, "lng": -109.9, "rotate": -58, "size": 17 },
-    { "name": "Great Basin", "lat": 39.6, "lng": -116.4, "size": 15 },
-    { "name": "Colorado Plateau", "lat": 36.95, "lng": -110.2, "size": 15 },
-    { "name": "Great Plains", "lat": 35.6, "lng": -101.2, "size": 15 }
+    {
+      "name": "Pacific Ocean",
+      "lat": 35.4,
+      "lng": -125.9,
+      "size": 22
+    },
+    {
+      "name": "Sierra Nevada",
+      "lat": 37.25,
+      "lng": -118.95,
+      "rotate": -48,
+      "size": 15
+    },
+    {
+      "name": "Cascade Range",
+      "lat": 45.2,
+      "lng": -121.55,
+      "rotate": -78,
+      "size": 15
+    },
+    {
+      "name": "Rocky Mountains",
+      "lat": 42.6,
+      "lng": -109.9,
+      "rotate": -58,
+      "size": 17
+    },
+    {
+      "name": "Great Basin",
+      "lat": 39.6,
+      "lng": -116.4,
+      "size": 15
+    },
+    {
+      "name": "Colorado Plateau",
+      "lat": 36.95,
+      "lng": -110.2,
+      "size": 15
+    },
+    {
+      "name": "Great Plains",
+      "lat": 35.6,
+      "lng": -101.2,
+      "size": 15
+    }
   ]
 }
