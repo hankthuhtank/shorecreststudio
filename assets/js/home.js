@@ -6,8 +6,8 @@
   var ST = window.ST, $ = ST.$, $$ = ST.$$;
 
   /* ---------------------------------------------------------------- slideshow */
-  var SLIDES = ["SC-001", "SC-003", "new-crescentlake", "new-burney-falls", "new-animal2", "new-night4", "SC-025"];
-  var FOCUS = { "SC-001": "50% 60%", "SC-022": "50% 62%", "SC-043": "50% 60%", "SC-039": "50% 40%" };
+  var SLIDES = ["SC-001", "SC-058", "SC-039", "SC-020", "SC-025", "SC-052"];
+  var FOCUS = { "SC-001": "50% 55%", "SC-058": "50% 46%", "SC-039": "50% 44%", "SC-020": "50% 54%", "SC-025": "50% 42%", "SC-052": "50% 52%" };
   var DUR = 7000;
 
   function slideshow() {
@@ -17,7 +17,7 @@
     var cur = 0, timer = 0, visible = true, started = false;
     box.innerHTML = list.map(function (p, i) {
       return '<div class="show__slide' + (i === 0 ? " is-cur is-first" : "") + '"><img ' +
-        (i === 0 ? 'fetchpriority="high" ' : 'loading="lazy" ') + 'src="' + ST.src(p, 1600) + '" srcset="' + ST.srcset(p) + '" sizes="100vw" alt="' + ST.esc(p.alt) +
+        (i === 0 ? 'fetchpriority="high" ' : 'loading="lazy" ') + 'src="' + ST.src(p, 2400) + '" srcset="' + ST.srcset(p) + '" sizes="100vw" alt="' + ST.esc(p.alt) +
         '" style="object-position:' + (FOCUS[p.id] || "50% 50%") + '"></div>';
     }).join("");
     bars.innerHTML = list.map(function (p, i) {
@@ -54,7 +54,7 @@
       btns[cur].classList.add("is-cur");
       caption(list[cur]);
       var next = new Image();
-      next.src = ST.src(list[(cur + 1) % list.length], 1600);
+      next.src = ST.src(list[(cur + 1) % list.length], 2400);
       schedule();
     }
     function schedule() {
@@ -169,7 +169,7 @@
   }
 
   /* ---------------------------------------------------------------- a few favorites */
-  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "new-night4", "SC-003", "new-animal4", "new-burney-falls", "new-winslow", "SC-025", "new-night3"];
+  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "SC-041", "SC-003", "new-animal4", "SC-014", "SC-005", "SC-025", "SC-058"];
   function favorites() {
     var el = $("[data-selection]"), tabs = $("[data-collection-tabs]");
     if (!el || !tabs) return;
