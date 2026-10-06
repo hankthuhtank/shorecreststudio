@@ -6,8 +6,8 @@
   var ST = window.ST, $ = ST.$, $$ = ST.$$;
 
   /* ---------------------------------------------------------------- slideshow */
-  var SLIDES = ["SC-001", "SC-058", "SC-039", "SC-005", "SC-025", "SC-052"];
-  var FOCUS = { "SC-001": "50% 55%", "SC-058": "50% 46%", "SC-039": "50% 44%", "SC-005": "50% 68%", "SC-025": "50% 42%", "SC-052": "50% 52%" };
+  var SLIDES = ["SC-001", "SC-058", "SC-039", "SC-005", "SC-028", "SC-052"];
+  var FOCUS = { "SC-001": "50% 55%", "SC-058": "50% 46%", "SC-039": "50% 44%", "SC-005": "50% 68%", "SC-028": "50% 42%", "SC-052": "50% 52%" };
   var DUR = 7000;
 
   function slideshow() {
@@ -169,7 +169,7 @@
   }
 
   /* ---------------------------------------------------------------- a few favorites */
-  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "SC-041", "SC-003", "new-animal4", "SC-014", "SC-005", "SC-025", "SC-058", "SC-039"];
+  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "SC-041", "SC-003", "new-animal4", "SC-014", "SC-005", "SC-028", "SC-058", "SC-039"];
   function favorites() {
     var el = $("[data-selection]"), tabs = $("[data-collection-tabs]");
     if (!el || !tabs) return;
@@ -208,3 +208,4 @@
     favorites();
   });
 })();
+
