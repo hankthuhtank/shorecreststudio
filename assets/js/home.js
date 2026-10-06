@@ -169,7 +169,7 @@
   }
 
   /* ---------------------------------------------------------------- a few favorites */
-  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "SC-041", "SC-003", "new-animal4", "SC-014", "SC-005", "SC-025", "SC-058"];
+  var FAVORITES = ["SC-001", "new-crescentlake", "new-animal2", "SC-021", "new-toketee-falls2", "SC-041", "SC-003", "new-animal4", "SC-014", "SC-005", "SC-025", "SC-058", "SC-039"];
   function favorites() {
     var el = $("[data-selection]"), tabs = $("[data-collection-tabs]");
     if (!el || !tabs) return;
@@ -178,6 +178,8 @@
       return '<button class="chip" type="button" data-collection="' + c.id + '" aria-pressed="false">' + ST.esc(c.name) + '</button>';
     }).join("");
     function show(id) {
+      var collection = ST.collection(id);
+      if (collection && collection.page) { location.href = collection.page; return; }
       var list = id === "favorites" ? FAVORITES.map(function (pid) { return ST.photoById[pid]; }).filter(Boolean) : ST.collectionPhotos(id).slice(0, 8);
       if (g && g.destroy) g.destroy();
       g = ST.jrows(el, list, {
@@ -206,4 +208,3 @@
     favorites();
   });
 })();
-

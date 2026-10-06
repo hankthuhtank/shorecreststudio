@@ -661,3 +661,46 @@ svg.band__contour { position: absolute; inset: 0; width: 100%; height: 100%; col
   .collection-tabs .chip { flex: none; white-space: nowrap; }
 }
 @media (prefers-reduced-motion: reduce) { .collection-cover img { transition: none; } }
+
+/* Astro: a personal portrait and an album of memories. */
+.astro-intro { padding: calc(var(--header-h) + 70px) 0 70px; }
+.astro-intro__grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(30px, 7vw, 100px); }
+.astro-intro__copy h1 { font-size: clamp(5rem, 10vw, 9rem); line-height: .95; }
+.astro-intro__lead { margin-top: 24px; color: var(--pine); font-family: var(--serif); font-size: clamp(1.5rem, 2.8vw, 2.2rem); }
+.astro-intro__story { margin-top: 26px; max-width: 46ch; font-size: 1.2rem; line-height: 1.6; }
+.astro-intro__story p + p { margin-top: 1em; }
+.astro-intro__link { display: inline-flex; align-items: center; gap: 14px; margin-top: 30px; }
+.astro-intro__portrait { width: 100%; max-width: 440px; justify-self: center; }
+.astro-intro__portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; border-radius: 6px; box-shadow: 0 20px 60px rgba(17, 29, 28, .16); }
+.astro-intro__portrait figcaption { margin-top: 14px; color: var(--muted); }
+.astro-album { padding: clamp(50px, 7vw, 90px) 0; scroll-margin-top: var(--header-h); }
+.astro-album__head { display: flex; align-items: end; justify-content: space-between; gap: 28px; flex-wrap: wrap; margin-bottom: 32px; }
+.astro-album__head p { max-width: 32ch; color: var(--cloud); opacity: .85; font-size: 1.1rem; }
+.astro-album__stage { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1fr) 52px; gap: 20px; align-items: center; }
+.astro-album__photo { display: flex; align-items: center; justify-content: center; height: clamp(340px, 64vh, 650px); border-radius: 6px; background: rgba(0, 0, 0, .12); overflow: hidden; cursor: zoom-in; }
+.astro-album__photo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; box-shadow: 0 12px 35px rgba(0, 0, 0, .2); }
+.astro-album__arrow { display: grid; place-items: center; width: 50px; height: 50px; border: 1px solid rgba(223, 229, 225, .32); border-radius: 50%; color: var(--cloud); transition: background .25s; }
+.astro-album__arrow:hover { background: rgba(223, 229, 225, .14); }
+.astro-album__caption { display: flex; justify-content: space-between; gap: 20px; padding: 18px 72px 22px; font-size: 1.1rem; }
+.astro-album__caption [data-astro-count] { color: var(--cloud); opacity: .7; white-space: nowrap; }
+.astro-album__reel { position: relative; display: flex; overflow-x: auto; gap: 12px; padding: 10px 2px 16px; scrollbar-width: thin; scrollbar-color: var(--sage) transparent; scroll-snap-type: x proximity; }
+.astro-memory { flex: 0 0 95px; height: 120px; border-radius: 4px; overflow: hidden; opacity: .6; background: var(--ph); scroll-snap-align: center; transition: opacity .3s, outline-color .3s; outline: 2px solid transparent; outline-offset: 4px; }
+.astro-memory img { width: 100%; height: 100%; object-fit: cover; }
+.astro-memory:hover, .astro-memory[aria-pressed="true"] { opacity: 1; }
+.astro-memory[aria-pressed="true"] { outline-color: var(--sand-2); }
+.collection-cover--astro { background: var(--pine); }
+.collection-cover--astro img { width: 54%; object-fit: contain; }
+.collection-cover--astro::after { display: none; }
+.collection-cover--astro .collection-cover__name { left: 60%; bottom: 50%; transform: translateY(50%); }
+@media (max-width: 700px) {
+  .astro-intro { padding-top: calc(var(--header-h) + 42px); }
+  .astro-intro__grid { grid-template-columns: 1fr; gap: 40px; }
+  .astro-intro__copy h1 { font-size: 5.5rem; }
+  .astro-intro__portrait { max-width: 380px; }
+  .astro-album__stage { grid-template-columns: 36px minmax(0, 1fr) 36px; gap: 8px; }
+  .astro-album__arrow { width: 34px; height: 42px; }
+  .astro-album__photo { height: 54vh; min-height: 300px; }
+  .astro-album__caption { padding-inline: 44px; font-size: 1rem; }
+  .astro-memory { flex-basis: 76px; height: 98px; }
+}
+@media (prefers-reduced-motion: reduce) { .astro-memory, .astro-album__arrow { transition: none; } }

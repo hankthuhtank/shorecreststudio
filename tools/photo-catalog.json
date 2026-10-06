@@ -1863,5 +1863,192 @@
     ],
     "c": "#7e7371",
     "q": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAACwBQCdASoUABgAPt1orVCopaQiqAgBEBuJaACdMoKDsAXwC0lWXprE7onR4X6m2XxGPCu7p4AA/oQK3zMU9zx11UqtkekjdxjFpcNoPb4BSqojtMCnoEsyBYZcuBmuXIlG2saPhdjBLvAzAoxG0jqkSDLSVKZQGQ1a3UtzUGIMHs0HGvZZCQyEykdrhs40ZJjmEmIZNuE8wRrOasyAYmGn078DNyjLuo4QsyN89HOqK8GO94xcwT29ok49M9ZrIbBlJSfwAAA="
+  },
+  {
+    "id": "astro-01",
+    "trip": null,
+    "stop": null,
+    "title": "Ready to play",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro lying in the grass with his front paws stretched out.",
+    "w": 1320,
+    "h": 1615,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#8a8579",
+    "q": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBQCdASoUABgAPt1iqU+opSOiKAqpEBuJZwC2yBBIYBZt5BjA4TdRP6IoG9T+iqxvYAD+V3LcOwPTcbxYYeeXYYNZm9teA5wZYIRKZsqnZERdE/BmrbQwqh6kxtBEznrvoXs1EBXnrq1a3F3CJpIisBRIXR2useja3UQasnqXbZOLlT7eDMpd5t4FB1DX+AJ161Ebl21qCkGHsV7iKa4pMzLAAA=="
+  },
+  {
+    "id": "astro-02",
+    "trip": null,
+    "stop": null,
+    "title": "On the trail",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro standing on a rocky ledge in front of green foliage.",
+    "w": 1320,
+    "h": 1760,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#606657",
+    "q": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABQBQCdASoSABgAPt1iqU+opSOiKAqpEBuJZQDM4f/ngADQUS6lzEAPCTlOR45l5QX33AAA+83YTOB+woHgdMffQiLSyNVgTyjz6cbRA4b/1v4tB/9EFKr77NcSTjhCFLi5M9ZnPVKN11SiygTUeUn4qYFD6AVRjFPAWdIR75KtgqB0uflhpCSX7kS/S9nx0EfiZ9VQvroWQ04Wf+7g6F/xx0c23TcjbCnwAA=="
+  },
+  {
+    "id": "astro-03",
+    "trip": null,
+    "stop": null,
+    "title": "By the water",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro looking out over a river from a rocky bank.",
+    "w": 1320,
+    "h": 2013,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#938a82",
+    "q": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoQABgAPt1apkyopSOiMAgBEBuJQBOgBFTn8pTTacQGHrFEL04AAP6U3jmUkXfNjhHwYv2OzqyhljA44GRA5+Ri1cVzAoO9aRasJuzopMYSb9I8nbaLVEC8nvXQV/Io66C24DaMEGc/E5CF5Oj9hxcuXGnMlFmgjp/JX6JvQ/o2pPC4fT9gqUo9vFz3mxo5iHt+7EBWVAA="
+  },
+  {
+    "id": "astro-04",
+    "trip": null,
+    "stop": null,
+    "title": "Taking it all in",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro sitting on a rocky shore beneath a blue sky.",
+    "w": 1320,
+    "h": 1588,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#84898d",
+    "q": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAQBQCdASoUABgAPt1YpE2opKMiMBgMARAbiUAWHYIcaRofNJyioQEaHo9MNkEU9QMAAP1AfnmzvCEDVyQCNzb/q3X3tgoojjQ6pf3WjHkDpylWOnpq84Kwczu9l1BPh8YP66VLmrhxLEnZ37GWWJs2vwAD0VXPq4XkOL9iHqibW3DZ+wCRiAJ3z2Cqb8XDzH2ov9FOe3QuaaGRV0y5v5mJ5oqbOh89RTyFCZnGNPC+lOSp9V7Dn/H8WUAAAA=="
+  },
+  {
+    "id": "astro-05",
+    "trip": null,
+    "stop": null,
+    "title": "Along for the ride",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro standing on a driveway with hills and trees in the distance.",
+    "w": 1293,
+    "h": 1280,
+    "s": [
+      480,
+      1293
+    ],
+    "c": "#726f65",
+    "q": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwBACdASoYABgAPt1gp04opaMiKA1REBuJZQDG9BEg7aTWUEQdfRsHzyk9WgwAAP6yPbXDvbcBiRIB9w3zojuNYqjUQbaHOUpcUAnDHppoh6zhGhcwvfJZqC4KcV59aQENkYNhsLQU+ESCdlbM/KE3aCtfSs5KxZrdLyu8gu6V3qggAAA="
+  },
+  {
+    "id": "astro-06",
+    "trip": null,
+    "stop": null,
+    "title": "A good evening",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro beside the water with his tongue out beneath an evening sky.",
+    "w": 1320,
+    "h": 2147,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#8c9488",
+    "q": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACwBACdASoPABgAPt1apkyopSOiMAgBEBuJYgCsBrAfgAM42jogPJHGxz7TEzrgAP37AfMuZWOoHAM4muil7pnw8NgqsxIS9DoQYl3O7Sa0eFJ7AqoTYCxfWsTHiqHFY2N1TChi22mhZrs4EuZCRyctYPxWU2mVoBCxLvi6oXbmOf0Y5gHE93vb7qDbhtV+6bZ2co5QI6wAAA=="
+  },
+  {
+    "id": "astro-07",
+    "trip": null,
+    "stop": null,
+    "title": "Game day",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro sitting on a couch in a Dallas Cowboys jersey.",
+    "w": 1127,
+    "h": 1609,
+    "s": [
+      480,
+      1127
+    ],
+    "c": "#716965",
+    "q": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAADwBACdASoRABgAPt1kqE+opaOiKAqpEBuJQAqP3gBcHZvknMk149KBj0Q+n0Uo8gAA+6VI1N/Iw4KYrUfouNO/6T+ITcM+M7fB1ANRlxmXagT7jdaSXrr2vp98OO7JrHVKlh+57i4SSrrZGdEKsM2t6f6vxlkyPCjLupaFcP7uoad74Suk0vrg/h1gBx+wC9e0Dpzh78QSbxUv5LaTq3RkfmdGsxqV6fSpCv1YL7hB6XWw9afMH74/Vkf0PQ08estDJKPFWljTKVa8kO4nYYXdRcSycP4AAAA="
+  },
+  {
+    "id": "astro-08",
+    "trip": null,
+    "stop": null,
+    "title": "A quiet afternoon",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro resting in the grass in front of a wooden fence.",
+    "w": 1320,
+    "h": 1535,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#9d9787",
+    "q": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBQCdASoVABgAPt1cqE6opKOiMBgIARAbiWUAnQARShIYUx/lEe65hyvgYoKHIgfPoAD+1y1ukTw+8Jy2YNfd+FjNCcsL7uVf7vRkTje5ROniBHBrZoHYpgSNSxe2Q8lkkW6gCGmWhIBjKSW5bP90xIo9Np5emFj69VcWe22Z8nhYyA+sAxr+LZWBoE3AucF8a7LAEaI1VjPanOmAFBAl9gAAAA=="
+  },
+  {
+    "id": "astro-09",
+    "trip": null,
+    "stop": null,
+    "title": "Snow day",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro in a snowy yard with a happy, open-mouth expression.",
+    "w": 1320,
+    "h": 1617,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#948777",
+    "q": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBACdASoUABgAPt1eqE2opSOiKA1REBuJQBcGAiMuAXNr6hUICPFTDZW/10m75wAA/Y+se0k1qy3xf5Hhezv9PvL/SccoBCOQoT4PcxLsS9fHDGmdqWhW014UJPJqV2Z4NgHKuTeeqTtoExYM9iLUgjYQcWzeo7rs9XLbQ8hKa4zH7TODfED7iBIZSnN8CJy4YW0mmDKQAAAA"
+  },
+  {
+    "id": "astro-10",
+    "trip": null,
+    "stop": null,
+    "title": "Watching the snow",
+    "place": "Astro",
+    "line": "",
+    "alt": "Astro sitting beside snow-covered bushes.",
+    "w": 1320,
+    "h": 1622,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#757574",
+    "q": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAADQBQCdASoUABgAPt1kqE+opaOiKAqpEBuJZQDDsazWztn8L1DKfzH4Q0VAULU5Yy0AEhEZvswAAP3ieUCtYP8ppQsKZCmEQppRYcPx4P6NKfF0Wzl4T0nyvGpP+wp2Q6fSvgzX1fue6ezbQoQUJzfI1qL51HtoLrw/VkG/TNe07VN6KbMvREFZG/AU7maZktZM/irb1zakxIjHhU+ZLt3oUdwy5g4qM74cZjcz3DgPCPpj47LDGq2vfqwjQVmEaTvMsf4RecrVkhH3jEoVQAAA"
+  },
+  {
+    "id": "astro-11",
+    "trip": null,
+    "stop": null,
+    "title": "Adventure buddies",
+    "place": "Astro",
+    "line": "",
+    "alt": "Helal Safi and Astro together outdoors.",
+    "w": 1320,
+    "h": 1894,
+    "s": [
+      480,
+      1320
+    ],
+    "c": "#6d646e",
+    "q": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBQCdASoRABgAPt1iqk8opaOiKAqpEBuJZACw7A/HaLUWpOmGHnkOGrew2MRUj4Nv3kAA/rYeIRt1K543bQIFkImDL3a3/d19xHUWC7nBWGeouCTwx5TUbx2LkUpHVlGC+BnEeMVc0RfcsM6optI0umNSE+4Xo+z/6qk5G2wC7euD3/QHbxMlymMB4yjOTvO+i+fyrN7+tN43m7nHNWfzM5492ztufeZvRFpW1wBCq3q0PO+UswLXLDoX0C93FeDQ6oTzMMoj9QAAAAA="
   }
 ]

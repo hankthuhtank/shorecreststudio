@@ -3,18 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Photographs | Shorecrest Studio</title>
-  <meta name="description" content="Coastlines, mountains, waterfalls, wildlife and night skies. Explore the photography collections of Helal Safi.">
+  <title>Astro | Shorecrest Studio</title>
+  <meta name="description" content="Astro, my adventure buddy. Photographs and memories of the dog I adopted in 2015, who passed away on December 31, 2024.">
   <meta name="theme-color" content="#f2f3ef">
-  <link rel="canonical" href="https://shorecrest.studio/photographs.html">
+  <link rel="canonical" href="https://shorecrest.studio/astro.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shorecrest Studio">
-  <meta property="og:title" content="Photographs | Shorecrest Studio">
-  <meta property="og:description" content="Photography collections by Helal Safi: coastlines, mountains, waterfalls, wildlife and night skies.">
-  <meta property="og:url" content="https://shorecrest.studio/photographs.html">
-  <meta property="og:image" content="https://shorecrest.studio/assets/img/og/studio.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:title" content="Astro | Shorecrest Studio">
+  <meta property="og:description" content="For Astro, my adventure buddy. His own corner of Shorecrest.">
+  <meta property="og:url" content="https://shorecrest.studio/astro.html">
+  <meta property="og:image" content="https://shorecrest.studio/assets/img/photo/astro-11-1320.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -23,6 +21,7 @@
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/safi.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/studio.css?v=20261006c">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Astro | Shorecrest Studio","url":"https://shorecrest.studio/astro.html","author":{"@type":"Person","name":"Helal Safi","url":"https://shorecrest.studio/about.html"}}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -33,8 +32,8 @@
     <nav class="hdr__nav" aria-label="Primary">
       <a href="road-trip-2019.html">Grand Canyon 2019</a>
       <a href="45-days.html">West Coast 2026</a>
-      <a href="photographs.html" aria-current="page">Photographs</a>
-      <a href="astro.html">Astro</a>
+      <a href="photographs.html">Photographs</a>
+      <a href="astro.html" aria-current="page">Astro</a>
       <a href="about.html">About</a>
     </nav>
     <div class="hdr__tools">
@@ -57,18 +56,39 @@
   </div>
 
   <main id="main">
-    <section class="gh paper" data-header="light">
-      <div class="wrap gh__in">
-        <div>
-          <h1 class="h1" data-split>Every <em>photograph.</em></h1>
-          <p class="lead" data-reveal style="--d:150">Organized by what caught my eye. Choose a collection and take a closer look.</p>
+    <section class="astro-intro paper" data-header="light" aria-labelledby="astro-title">
+      <div class="wrap astro-intro__grid">
+        <div class="astro-intro__copy">
+          <h1 id="astro-title" data-split>Astro.</h1>
+          <p class="astro-intro__lead" data-reveal>My adventure buddy.</p>
+          <div class="astro-intro__story" data-reveal style="--d:150">
+            <p>I adopted Astro in 2015, shortly after my dad passed away. He filled a huge void in my heart and became the perfect adventure buddy.</p>
+            <p>We went a lot of places together. The trails, the long drives, and the quiet days at home are all part of his story.</p>
+            <p>Astro passed away on December 31, 2024, at twelve years old. This part of Shorecrest is for him.</p>
+          </div>
+          <a class="link astro-intro__link" href="#astro-album">Spend a little time with Astro <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></a>
         </div>
-        <div class="collection-tabs" data-gallery-tabs role="group" aria-label="Photo collections"></div>
+        <figure class="astro-intro__portrait" data-wipe>
+          <img src="assets/img/photo/astro-11-1320.webp" srcset="assets/img/photo/astro-11-480.webp 480w, assets/img/photo/astro-11-1320.webp 1320w" sizes="(max-width: 700px) 85vw, 440px" alt="Helal Safi and Astro outdoors together" fetchpriority="high">
+          <figcaption>Me and Astro.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="gal paper" data-header="light" aria-label="Photographs">
-      <div class="wrap"><div class="collection-covers" data-gallery-covers></div><div data-gallery hidden></div></div>
+    <section class="astro-album pine" id="astro-album" data-header="dark" aria-labelledby="astro-album-title">
+      <div class="wrap">
+        <div class="astro-album__head">
+          <h2 class="h2" id="astro-album-title" data-split>A life <em>alongside mine.</em></h2>
+          <p>Choose a memory below. Open the photo to see it full size.</p>
+        </div>
+        <div class="astro-album__stage" data-astro-stage tabindex="0" aria-label="Astro photo album. Use the left and right arrow keys to browse.">
+          <button class="astro-album__arrow" type="button" data-astro-prev aria-label="Previous photo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+          <a class="astro-album__photo" data-astro-display href="assets/img/photo/astro-04-1320.webp"><img src="assets/img/photo/astro-04-1320.webp" alt="Astro sitting on a rocky shore beneath a blue sky"></a>
+          <button class="astro-album__arrow" type="button" data-astro-next aria-label="Next photo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="astro-album__caption" aria-live="polite" aria-atomic="true"><span data-astro-caption>Taking it all in</span><span data-astro-count>1 / 16</span></div>
+        <div class="astro-album__reel" data-astro-reel role="group" aria-label="Choose an Astro photo"></div>
+      </div>
     </section>
   </main>
 
@@ -117,7 +137,6 @@
   <script src="assets/vendor/lenis.min.js"></script>
   <script src="assets/js/core.js?v=20261006"></script>
   <script src="assets/js/viewer.js"></script>
-  <script src="assets/js/gallery.js?v=20261006c"></script>
+  <script src="assets/js/astro.js"></script>
 </body>
 </html>
-

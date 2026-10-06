@@ -85,11 +85,7 @@
       "new-animal5",
       "SC-050",
       "SC-051",
-      "SC-013",
-      "2019-whitesands",
-      "2019-grandcanyon2",
-      "2019-zion",
-      "2019-texas"
+      "SC-013"
     ]
   },
   {
@@ -121,7 +117,6 @@
       "2019-guadalupepeak",
       "2019-carlsbad",
       "2019-carlsbad3",
-      "2019-horseshoebay",
       "2019-utah"
     ]
   },
@@ -148,6 +143,30 @@
       "2019-carlsbad2",
       "2019-grandcanyon",
       "2019-mesaverde2"
+    ]
+  },
+  {
+    "id": "astro",
+    "name": "Astro",
+    "cover": "astro-04",
+    "page": "astro.html",
+    "photos": [
+      "astro-04",
+      "astro-11",
+      "2019-grandcanyon2",
+      "astro-06",
+      "2019-whitesands",
+      "2019-horseshoebay",
+      "astro-03",
+      "2019-zion",
+      "2019-texas",
+      "astro-02",
+      "astro-01",
+      "astro-08",
+      "astro-07",
+      "astro-09",
+      "astro-10",
+      "astro-05"
     ]
   }
 ]

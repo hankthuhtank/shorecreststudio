@@ -10,13 +10,14 @@
   }).join("");
   covers.innerHTML = ST.collections.map(function (c) {
     var p = ST.photoById[c.cover];
-    return '<a class="collection-cover" href="?collection=' + c.id + '" data-album="' + c.id + '" style="--ph:' + p.c + '">' +
+    return '<a class="collection-cover' + (c.page ? ' collection-cover--astro' : '') + '" href="' + (c.page || '?collection=' + c.id) + '" data-album="' + c.id + '" style="--ph:' + p.c + '">' +
       '<img class="fade-img" src="' + ST.src(p, 960) + '" srcset="' + ST.srcset(p, 1600) + '" sizes="(max-width: 700px) 90vw, 46vw" alt="' + ST.esc(p.alt) + '" loading="lazy" decoding="async">' +
       '<span class="collection-cover__name">' + ST.esc(c.name) + ' <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a>';
   }).join("");
   ST.fadeImages(covers);
   function show(id, changeUrl) {
     var collection = ST.collection(id);
+    if (collection && collection.page) { location.href = collection.page; return; }
     if (!collection) id = "all";
     covers.hidden = id !== "all";
     host.hidden = id === "all";
@@ -38,7 +39,7 @@
   }
   $$("[data-collection]", tabs).forEach(function (b) { b.addEventListener("click", function () { show(b.getAttribute("data-collection"), true); }); });
   $$("[data-album]", covers).forEach(function (a) {
-    a.addEventListener("click", function (e) { e.preventDefault(); show(a.getAttribute("data-album"), true); $(".gh").scrollIntoView({ behavior: ST.reduce ? "auto" : "smooth", block: "start" }); });
+    a.addEventListener("click", function (e) { var c = ST.collection(a.getAttribute("data-album")); if (c && c.page) return; e.preventDefault(); show(a.getAttribute("data-album"), true); $(".gh").scrollIntoView({ behavior: ST.reduce ? "auto" : "smooth", block: "start" }); });
   });
   show(ST.param("collection") || "all", false);
 })();
