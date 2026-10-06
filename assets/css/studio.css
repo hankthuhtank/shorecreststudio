@@ -704,3 +704,13 @@ svg.band__contour { position: absolute; inset: 0; width: 100%; height: 100%; col
   .astro-memory { flex-basis: 76px; height: 98px; }
 }
 @media (prefers-reduced-motion: reduce) { .astro-memory, .astro-album__arrow { transition: none; } }
+
+/* Keep the expanded navigation comfortable on smaller screens. */
+@media (max-width: 1280px) {
+  .hdr__nav, .hdr__tools .btn { display: none; }
+  .menu-btn { display: block; }
+}
+@media (max-height: 650px) {
+  .menu { justify-content: flex-start; overflow-y: auto; }
+  .menu__links, .menu__foot { flex-shrink: 0; }
+}

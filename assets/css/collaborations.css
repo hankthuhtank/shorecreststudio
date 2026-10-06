@@ -1,0 +1,62 @@
+/* Collaborations: a compact introduction, clear offers, and selected photographs. */
+.collab-hero { padding: calc(var(--header-h) + 76px) 0 76px; }
+.collab-hero__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+.collab-hero h1 { font-size: clamp(2.7rem, 5.1vw, 5.5rem); line-height: 1.05; }
+.collab-hero__lead { margin-top: 22px; font: 380 clamp(1.5rem, 2.2vw, 2.1rem)/1.2 var(--serif); color: var(--pine); }
+.collab-hero__intro { margin-top: 22px; max-width: 42ch; font-size: var(--fs-lead); line-height: 1.55; }
+.collab-hero__links { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; margin-top: 30px; }
+.collab-hero__photo a { display: block; overflow: hidden; border-radius: 5px; }
+.collab-hero__photo img { width: 100%; height: auto; }
+.collab-hero__photo figcaption { margin-top: 12px; color: var(--muted); font-size: 1rem; }
+.collab-story { padding: clamp(48px, 6vw, 80px) 0; }
+.collab-story__grid, .collab-contact__grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 7vw, 100px); }
+.collab-story h2, .collab-contact h2 { max-width: 12ch; }
+.collab-story__copy { max-width: 56ch; font-size: 1.2rem; line-height: 1.65; }
+.collab-story__copy p + p { margin-top: 1em; }
+.collab-story__copy .link { display: inline; border-bottom: 1px solid rgba(223,229,225,.4); }
+.collab-opportunities { padding: clamp(48px, 6vw, 80px) 0 20px; }
+.collab-opportunities__list { margin-top: 34px; }
+.collab-opportunities__list > div { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(24px, 6vw, 90px); border-top: 1px solid var(--line); padding: 24px 0; }
+.collab-opportunities__list > div:last-child { border-bottom: 1px solid var(--line); }
+.collab-opportunities dt { font: 400 clamp(1.35rem, 2vw, 1.75rem)/1.2 var(--serif); }
+.collab-opportunities dd { font-size: 1.16rem; max-width: 58ch; line-height: 1.55; color: var(--muted); }
+.collab-work { padding: clamp(48px, 6vw, 80px) 0; scroll-margin-top: var(--header-h); }
+.collab-work__head { display: flex; justify-content: space-between; gap: 28px; align-items: end; margin-bottom: 36px; }
+.collab-work__head > div { max-width: 35ch; font-size: 1.1rem; }
+.collab-work__camera { margin-bottom: 8px; color: var(--pine); }
+.collab-work__camera strong { font-weight: 400; font-size: 1.25rem; }
+.collab-work__photos { columns: 3; column-gap: 22px; }
+.collab-photo { break-inside: avoid; margin-bottom: 24px; }
+.collab-photo a { display: block; overflow: hidden; border-radius: 4px; cursor: zoom-in; background: var(--paper-2); }
+.collab-photo img { width: 100%; height: auto; transition: transform .7s var(--ease-out); }
+.collab-photo a:hover img { transform: scale(1.025); }
+.collab-photo figcaption { display: flex; flex-direction: column; gap: 1px; margin-top: 10px; font-size: 1rem; line-height: 1.35; }
+.collab-photo figcaption span:last-child { color: var(--muted); }
+.collab-work__places { display: grid; grid-template-columns: 1fr 1.4fr; gap: 20px 50px; margin-top: 28px; padding-top: 32px; border-top: 1px solid var(--line); }
+.collab-work__places h3 { font-size: var(--fs-h3); }
+.collab-work__places p { max-width: 58ch; font-size: 1.1rem; }
+.collab-work__places .link { display: inline-flex; align-items: center; gap: 14px; grid-column: 2; justify-self: start; }
+.collab-contact { padding: clamp(50px, 6vw, 90px) 0; }
+.collab-contact p { max-width: 48ch; font-size: var(--fs-lead); }
+.collab-contact__email { display: inline-flex; align-items: center; gap: 14px; border-bottom: 1px solid rgba(223,229,225,.4); padding-bottom: 8px; margin-top: 26px; font-size: clamp(1.25rem, 2.3vw, 1.8rem); }
+.collab-contact__email .i { flex: none; }
+@media (max-width: 900px) {
+  .collab-hero { padding-top: calc(var(--header-h) + 44px); }
+  .collab-hero__grid, .collab-story__grid, .collab-contact__grid { grid-template-columns: 1fr; }
+  .collab-hero__copy { max-width: 58ch; }
+  .collab-hero__intro { max-width: none; }
+  .collab-hero__photo { max-width: 680px; }
+  .collab-story h2, .collab-contact h2 { max-width: 19ch; }
+  .collab-work__head { flex-direction: column; align-items: start; }
+  .collab-work__photos { columns: 2; column-gap: 14px; }
+}
+@media (max-width: 600px) {
+  .collab-hero h1 { font-size: clamp(2.35rem, 10.2vw, 3.4rem); }
+  .collab-hero__links { gap: 20px; }
+  .collab-opportunities__list > div { grid-template-columns: 1fr; gap: 12px; }
+  .collab-work__places { grid-template-columns: 1fr; gap: 18px; }
+  .collab-work__places .link { grid-column: 1; }
+  .collab-photo figcaption { font-size: .94rem; }
+  .collab-photo { margin-bottom: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .collab-photo img { transition: none; } }
