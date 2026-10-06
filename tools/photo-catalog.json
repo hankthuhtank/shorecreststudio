@@ -2050,5 +2050,311 @@
     ],
     "c": "#6d646e",
     "q": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBQCdASoRABgAPt1iqk8opaOiKAqpEBuJZACw7A/HaLUWpOmGHnkOGrew2MRUj4Nv3kAA/rYeIRt1K543bQIFkImDL3a3/d19xHUWC7nBWGeouCTwx5TUbx2LkUpHVlGC+BnEeMVc0RfcsM6optI0umNSE+4Xo+z/6qk5G2wC7euD3/QHbxMlymMB4yjOTvO+i+fyrN7+tN43m7nHNWfzM5492ztufeZvRFpW1wBCq3q0PO+UswLXLDoX0C93FeDQ6oTzMMoj9QAAAAA="
+  },
+  {
+    "id": "new-california",
+    "trip": null,
+    "stop": null,
+    "title": "California hills",
+    "place": "California",
+    "line": "",
+    "alt": "Green hills and yellow wildflowers beneath a blue sky.",
+    "w": 1320,
+    "h": 966,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#96af85",
+    "q": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACwBQCdASoYABIAPt1grE8opSSiKAqpEBuJZgCdOUFVtZmA3PxQPp1IAO2n2BiR3O4xUFIeVgAA/IMx9/MXiNW0z5pBiaU7J8HkALCsw5H2/FKlyVhgZxhHmJY9fBCuKWwUpccUzs4FgAREjNYPJGAOXf5RNDwVHHwHO8qXFvKGskPbjod1uLwkw8eAeIAQWixjrsCFR4YX5nC+NSsqLYESLVheKlbmaiFDHJh8fMq+VnhXLHjYRlmqgxyAAA=="
+  },
+  {
+    "id": "new-colorado",
+    "trip": null,
+    "stop": null,
+    "title": "Mountain road",
+    "place": "Colorado",
+    "line": "",
+    "alt": "A winding road through trees below snow-covered Colorado mountains.",
+    "w": 1320,
+    "h": 984,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#858e7d",
+    "q": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADwBQCdASoYABIAPt1kqk+opaOiKAqpEBuJYwC7Mw7OAhAAoSfo/EWeg0yk2CR80RWjXiociB69QAD8j867DSjzCM2Tz6ctqEI+8cHXKZQ9HsMOGLznk5GaMwattiEfn1RuvJeIOkiYxQweiuQAqQL0EATMOXK+ToPKo1vuPtaQ+TektaKJQtWksE7ctqnLHvhetJzs03qOuCJoCR4QA0UdLLxEn7HCQUAAAA=="
+  },
+  {
+    "id": "new-glacier",
+    "trip": null,
+    "stop": null,
+    "title": "Lake reflections",
+    "place": "Glacier National Park, Montana",
+    "line": "",
+    "alt": "Snow-covered peaks and evergreen trees reflected in a calm lake.",
+    "w": 1320,
+    "h": 1664,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#6e8083",
+    "q": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAQBQCdASoTABgAPt1iqk8opSOiKAqpEBuJQBWAAgsxfcNq3U4vFfqQBPFjslsFTPkAAP6NMRM1+QkpQK8k9uSr+kAe04Vv76iRkMXvx4VCSRo2Ay/k2mYRRDmXmGJ+O4Wf5b3p52Kw+DAFwkAaHci1kB9QlxuI0S5jEMv3YTJT2dHpgMHxBCTwuRwZczkJGvVvlTAtEEz/HQORx8Bi/SfLhrFz28mZKAA="
+  },
+  {
+    "id": "new-jackson",
+    "trip": null,
+    "stop": null,
+    "title": "Welcome to Jackson Hole",
+    "place": "Jackson Hole, Wyoming",
+    "line": "",
+    "alt": "The Howdy Stranger welcome sign at Jackson Hole with snowy mountains behind it.",
+    "w": 1320,
+    "h": 1164,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#7e8999",
+    "q": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBQCdASoYABUAPt1cqk6opKQiMBgIARAbiUAWonKgDUzUmi+OJYd3d4x83mOCuWUZgAD+UPMUKzT/eMhHcEMjqjPwFLsLGEn7qbpV6apynjxb5nOZNAhRDv8znN0TzG95o1+EmQyefP2O2z8+XyP5yikEapRqy4p9xaDyts87z0FvDp1jzLFHpnvH5NTi/zmBXprzXMLNEy3JHwiId8viAAA="
+  },
+  {
+    "id": "new-montana",
+    "trip": null,
+    "stop": null,
+    "title": "Montana mountains",
+    "place": "Montana",
+    "line": "",
+    "alt": "A snow-covered mountain above evergreen forest beneath a cloudy sky.",
+    "w": 1320,
+    "h": 1586,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#6a9186",
+    "q": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBQCdASoUABgAPt1cqU6opKOiMBgIARAbiUAIeONlRIC/WVAzinznQq/An4h2VqKhecAA/sSKPkIcdRpivMpkSrfEmt5aj+wPZClpX56HKGG2YQ/1VTzYNMUKj+uIX/PW7aONmCZH+aKigIVU8xQuNWUtLSkGvO1qCwRlFKsS7rGhAJreHorclEcH/TV8skcEd97gJdAOn4AA"
+  },
+  {
+    "id": "new-mountbailey",
+    "trip": null,
+    "stop": null,
+    "title": "Mount Bailey",
+    "place": "Mount Bailey, Oregon",
+    "line": "",
+    "alt": "Snow covering the slopes of Mount Bailey above a forest of evergreen trees.",
+    "w": 1320,
+    "h": 1070,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#448698",
+    "q": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACwBQCdASoYABMAPt1iq08opSQiKAqpEBuJbACxHuOCyK41kA2oTAX2UojWNB71WG0USCcb0wAA/UVDc5Pn8Qb7gzwUuJ2VI8IwjAR48F/OMnoloZXqs8nPDgzIdWcmpe/tRn5fgmTO/+RBMB7vYNnYniRAiB4hlqlgUBzn1n+d26x/aBs0B+wJx5Iq7vgH6SWlyvt52fIfgl8hNlUj2a/Kvf/LIK8UmJknyu3iPRV7wa6Hnbr1Sfy7yHAeH7B7MoXZbbY+9wytEGbHSv5AAA=="
+  },
+  {
+    "id": "new-oregon",
+    "trip": null,
+    "stop": null,
+    "title": "Oregon coast",
+    "place": "Oregon",
+    "line": "",
+    "alt": "Waves breaking along a rocky coastline below wooded cliffs.",
+    "w": 1320,
+    "h": 1686,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#536e7f",
+    "q": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQBQCdASoTABgAPt1irE8opaSiKAqpEBuJYgCdMtOT+z/4B9ixHbZv9sV5gYBOHNbsdtSo0LgAAPhfRJqP6d/TNGJ4gkIbyLh4St+G+D/j2DC7Rl8u/apnL5NmBizjJ60EvEZv3xS5E9aLlLkcs3/OSv7gA5cKCRXzL4NuMMYQfY1kE89Mvz3NGKVVrRCiWDnuOApdr8qbJp3Jdv/+IQ71yGi0yrQ8WKiP7hNd9K1egJSs8c6rBN/6M4AAAA=="
+  },
+  {
+    "id": "new-sequioa",
+    "trip": null,
+    "stop": null,
+    "title": "Sequoia trees",
+    "place": "Sequoia National Park, California",
+    "line": "",
+    "alt": "Tall sequoia trees rising above patches of snow on the forest floor.",
+    "w": 1320,
+    "h": 1738,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#677881",
+    "q": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADwBQCdASoSABgAPt1kqU+opaOiKAqpEBuJZACsM3VxhsAnTgjmSbCgWxYVzXDpyikKcaqu37pKAAD87Y1sEk4QZNZMXdBHMFtnYsXAOJrYHEW7bXjdVXu/RVAmxqQvD26JaVzHqItRgfs53tCmr+rM+WV0Jd/mDVyH4ua9m1KK8ZjO/NzmfDzCI2zU4v4H7LxXLt1EJazNygyI+I2SdmgxjrPO0o3Wdfltf3t353fxE2ep4W6B4oZtIeMwDI0Xf9yqrj0WziRasC//jKk6FmNiM4NEz9SKSUaSLu+AD+addgKHOAE4AAAA"
+  },
+  {
+    "id": "new-shoresunset",
+    "trip": null,
+    "stop": null,
+    "title": "Sunset over the ocean",
+    "place": "Coast",
+    "line": "",
+    "alt": "The setting sun above a dark ocean with warm light reflected on the water.",
+    "w": 1320,
+    "h": 1453,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#755a35",
+    "q": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBQCdASoWABgAPt1iq08opaQiKAqpEBuJYgCxG7CT+gJbSgWjsuRDgWBROlY21XbPQAD9TR8H/vhvknp8a3obpPvvtGWmRnGQSPIU4Cy15frUtBZVH5v3dsgTCDwsTMXCbIl+lT4l9x+o8JkiA8Cw1jZJzAcTxVdiMuE47CpJY2Pda5EAAA=="
+  },
+  {
+    "id": "new-shoresunset2",
+    "trip": null,
+    "stop": null,
+    "title": "Sunlight on the waves",
+    "place": "Coast",
+    "line": "",
+    "alt": "Golden sunlight reflected across waves breaking near the shore.",
+    "w": 1320,
+    "h": 1626,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#716b55",
+    "q": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoTABgAPt1cp06opKMiMBgIARAbiWMAAB36ktCa8IFPfYf1ANaB2gAA8dvaqzJUSpfQKgbArTvk0FbckbIk0MAmYwqZo1bRkuhZ5Tg84yf8ofWUq8c2b4ujfA7fVqOeJs3o2wbyju1cpiV9VWfT6PIpgtUZMjVE6RDjrS+effOHU4MQNX04mNHo8LgZXcBRyf7YAA=="
+  },
+  {
+    "id": "new-washington",
+    "trip": null,
+    "stop": null,
+    "title": "Cabin beneath the mountains",
+    "place": "Washington",
+    "line": "",
+    "alt": "A cabin in a green meadow beneath a snowy mountain and evergreen forest.",
+    "w": 1320,
+    "h": 1531,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#598296",
+    "q": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAADwBQCdASoVABgAPt1kqU+opaOiKAqpEBuJbACdMt10kn/FsWFakeQcDftghdZ3A8reTX4ou9a1YAD3HxmdcOm2pJO7yxi3Y9j0e+w5NtTNXvjfRnZSV0ffFNaGq7/yR4kCEpY76BxPSfxdI8+DPm1PUoMh27m3hMeHUrB6oI8J7depsCvDUZYJP1/7Cjp/CtHfNpquMOYv9hme62AexT7167GtUS9E6HKBbTGiE200AR84cgAqPAaF999Y87k2zf/TV1w7nlV6D3cyvM+eKZhfqLPKzJt0+l3MmSgGGN11ElnfzXugAA=="
+  },
+  {
+    "id": "new-wildlife",
+    "trip": null,
+    "stop": null,
+    "title": "Bison resting",
+    "place": "Wildlife",
+    "line": "",
+    "alt": "Two bison resting and standing beside rocks and grass.",
+    "w": 1320,
+    "h": 1737,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#83775d",
+    "q": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAAAwBQCdASoSABgAPt1kp0+opaMiKAqpEBuJQBOmUAAy8IHVf6Lr2yi0W9HWSGuyovxDwAD+W/jDlmi86JqvWrmTqWPJeMPDrwAuYrFjEulGJlFXBjIBoSKHePXvpDi+KcU5wwG6l/yyPGHvs1uCykAFefiTOvSgL7PKMSgQoG2Tdwvkg33YC+z+V/8PCPmpM4R2e7cELW9yyBx/IitYle4m+Gg+3Z51WI5UtXZCvEisLSb3PlJsmTKa/AMSOOL7fWz0GMOIaHeddGba+39BbO7fRSFWNagA"
+  },
+  {
+    "id": "new-wildlife2",
+    "trip": null,
+    "stop": null,
+    "title": "Grazing beneath the peaks",
+    "place": "Wildlife",
+    "line": "",
+    "alt": "Dark grazing animals in a green meadow beneath cloud-covered mountain peaks.",
+    "w": 1320,
+    "h": 1424,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#7790af",
+    "q": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADQBQCdASoWABgAPt1cpEyopSOiMAgBEBuJZgCxHtVCrf/gPI/sjIQ4TB8Cxf+2o/klBIBHoq6IAP7qgKEERSb1qjZ+QdmY4B9kTQ9YulV+40XmZmo53vTO8bkaiB57+loiCGaakF7p5MoeDo49otaiG3a8AKvw2OnqwZ0H9X4ofOrXzzbbFFDHWyuGPjP5+JL1etlZVQ868BGNtUtNIWFJ4tGo5qzvlwkYvTGIrZlEmwVAAAA="
+  },
+  {
+    "id": "new-wildlife3",
+    "trip": null,
+    "stop": null,
+    "title": "Raven",
+    "place": "Wildlife",
+    "line": "",
+    "alt": "A black raven standing on rocky ground.",
+    "w": 1205,
+    "h": 1613,
+    "s": [
+      480,
+      960,
+      1205
+    ],
+    "c": "#645d7a",
+    "q": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoSABgAPt1eqE4opSOiMBgIARAbiWUAuwAJXNF1+quxzd7hW7X4f28gAK2Qk3vltCtyuhT3AX4SIBSOfzE9GjHoprsfXtC+UDaMI9SAXAe0Ek/mSIX0KMu0P/yxOuj3jWwxg5TB5simMf0/06e18tgA"
+  },
+  {
+    "id": "new-wildlife4",
+    "trip": null,
+    "stop": null,
+    "title": "Deer in the mountains",
+    "place": "Wildlife",
+    "line": "",
+    "alt": "A deer looking toward the camera with trees and snowy mountains behind it.",
+    "w": 1320,
+    "h": 1732,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#5e859c",
+    "q": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBQCdASoSABgAPt1orVEopaQiqAgBEBuJZgCsEf/gG4M3DDhgNtLB/ND14sE/HMYP1skAAP6NWK//tfsuEvVbtuf5gybLLDBnWn6gFfthjnVJJfVPuib7DSdUVdXw3DHSCjstrp1XeJnSw1Sn1JsrXevSDCn2JAoy2UpJw78LuYbWl6X7ij+09g6WijvQ3rw5ZI1G/OMGysulmt90YVgzohVPbwS6gAA="
+  },
+  {
+    "id": "new-wildlife5",
+    "trip": null,
+    "stop": null,
+    "title": "Mountain pasture",
+    "place": "Wildlife",
+    "line": "",
+    "alt": "Cattle grazing in a pasture beneath rugged mountain slopes.",
+    "w": 1320,
+    "h": 1741,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#667c99",
+    "q": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAAAQBgCdASoSABgAPt1kpU2opaMiMBgIARAbiWwAnTLiLsCQc+ALX/NWPm0Ebq9DMtky4FNn/r9llQAA/oz2i7CrzFXrX7VKmLX35jYeLy+RossMKGJQl3kzGJpc4eHIGhcfdm/PzPpKUsdVB6SGuis5d4uR/KhY9EPtuQkmX0mGuluJhmnIjBW2HQoiR3qinQHGa4Pssk7zUtJDrZQ/BQLhGYhXiph1qHckFk7CKVJbFI8iP0XmDOOaYaB1qKUi7Ng1gOoxLH77tyS3HfDzYvIN4YQyK9hBIH7GW8AWLQiEqFZb9um1AAAA"
+  },
+  {
+    "id": "new-yosemite",
+    "trip": null,
+    "stop": null,
+    "title": "Yosemite waterfall",
+    "place": "Yosemite National Park, California",
+    "line": "",
+    "alt": "A waterfall beside a granite cliff with evergreen trees and sunlight in the foreground.",
+    "w": 1320,
+    "h": 1967,
+    "s": [
+      480,
+      960,
+      1320
+    ],
+    "c": "#607c7d",
+    "q": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASoQABgAPt1cpkyopSOiMAgBEBuJbACdMoR4GBk+ZDCkIn1r/kH+gACrt1AeuFqd83pIpLit77DIkUtOfHOKHelMs9R3C+NyR0BIKY/r8Yv4yud7esRcWvsXyBpiYWbHzLRB6sLSybvKcKlJT2kGKEJ0t0RSonifmvOKuEVtvigAAA=="
   }
 ]
