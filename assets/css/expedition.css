@@ -103,8 +103,8 @@
     padding: 35px 8vw 28px; scroll-snap-type: x mandatory; scroll-padding-inline: 8vw;
     scrollbar-width: thin; scrollbar-color: rgba(223,229,225,.46) transparent;
   }
-  .expedition__photo {
-    position: relative; top: auto; bottom: auto; left: auto; right: auto;
+  .expedition__scene .expedition__photo {
+    position: relative; inset: auto;
     width: min(73vw, 320px); min-width: min(73vw, 320px); flex: 0 0 auto;
     transform: none !important; scroll-snap-align: center; will-change: auto;
   }
