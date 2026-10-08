@@ -4,11 +4,12 @@
   var ST = window.ST, $ = ST.$, $$ = ST.$$;
   var host = $("[data-gallery]"), covers = $("[data-gallery-covers]"), tabs = $("[data-gallery-tabs]");
   if (!host || !covers || !tabs) return;
-  var choices = [{ id: "all", name: "All collections" }].concat(ST.collections), rows = null;
+  var collections = ST.collections.filter(function (c) { return c.id !== "astro"; });
+  var choices = [{ id: "all", name: "All collections" }].concat(collections), rows = null;
   tabs.innerHTML = choices.map(function (c) {
     return '<button class="chip" type="button" data-collection="' + c.id + '" aria-pressed="false">' + ST.esc(c.name) + '</button>';
   }).join("");
-  covers.innerHTML = ST.collections.map(function (c) {
+  covers.innerHTML = collections.map(function (c) {
     var p = ST.photoById[c.cover];
     return '<a class="collection-cover' + (c.page ? ' collection-cover--astro' : '') + '" href="' + (c.page || '?collection=' + c.id) + '" data-album="' + c.id + '" style="--ph:' + p.c + '">' +
       '<img class="fade-img" src="' + ST.src(p, 960) + '" srcset="' + ST.srcset(p, 1600) + '" sizes="(max-width: 700px) 90vw, 46vw" alt="' + ST.esc(p.alt) + '" loading="lazy" decoding="async">' +
