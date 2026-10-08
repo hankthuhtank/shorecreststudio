@@ -1,78 +1,9 @@
 /* ==========================================================================
-   Home: the slideshow, the two trips on one map, a few favorites.
+   Home: the two trips on one map, a few favorites.
    ========================================================================== */
 (function () {
   "use strict";
   var ST = window.ST, $ = ST.$, $$ = ST.$$;
-
-  /* ---------------------------------------------------------------- slideshow */
-  var SLIDES = ["SC-001", "SC-058", "SC-039", "SC-005", "SC-028", "SC-052"];
-  var FOCUS = { "SC-001": "50% 55%", "SC-058": "50% 46%", "SC-039": "50% 44%", "SC-005": "50% 68%", "SC-028": "50% 42%", "SC-052": "50% 52%" };
-  var DUR = 7000;
-
-  function slideshow() {
-    var show = $(".show"), box = $("[data-slides]"), bars = $(".show__bars"), capA = $(".show__cap");
-    if (!show || !box) return;
-    var list = SLIDES.map(function (id) { return ST.photoById[id]; }).filter(Boolean);
-    var cur = 0, timer = 0, visible = true, started = false;
-    box.innerHTML = list.map(function (p, i) {
-      return '<div class="show__slide' + (i === 0 ? " is-cur is-first" : "") + '"><img ' +
-        (i === 0 ? 'fetchpriority="high" ' : 'loading="lazy" ') + 'src="' + ST.src(p, 2400) + '" srcset="' + ST.srcset(p) + '" sizes="100vw" alt="' + ST.esc(p.alt) +
-        '" style="object-position:' + (FOCUS[p.id] || "50% 50%") + '"></div>';
-    }).join("");
-    bars.innerHTML = list.map(function (p, i) {
-      return '<button type="button" aria-label="Show ' + ST.esc(p.title) + '"' + (i === 0 ? ' class="is-cur"' : "") + "></button>";
-    }).join("");
-    bars.style.setProperty("--dur", DUR + "ms");
-    var slides = $$(".show__slide", box), btns = $$("button", bars);
-    function caption(p) {
-      var at = ST.stopOf(p);
-      $(".show__place", show).innerHTML = "<span>" + ST.esc(p.place) + "</span>";
-      $(".show__title", show).innerHTML = "<span>" + ST.esc(p.title) + "</span>";
-      if (capA) capA.href = at ? at.trip.page + "?stop=" + encodeURIComponent(at.stop.id) : "photographs.html";
-      if (capA) capA.setAttribute("aria-label", p.title + ", " + p.place + ". See it on the map");
-    }
-    function go(i) {
-      if (i === cur) return;
-      var prev = cur;
-      cur = (i + list.length) % list.length;
-      slides.forEach(function (s, k) {
-        s.classList.remove("is-first");
-        s.classList.toggle("is-prev", k === prev);
-        if (k !== prev && k !== cur) s.classList.remove("is-cur", "is-prev");
-      });
-      // restart the lift on the incoming slide
-      var s = slides[cur];
-      s.classList.remove("is-cur");
-      void s.offsetWidth;
-      s.classList.add("is-cur");
-      btns.forEach(function (b, k) {
-        b.classList.toggle("is-done", k < cur);
-        b.classList.remove("is-cur");
-      });
-      void bars.offsetWidth;
-      btns[cur].classList.add("is-cur");
-      caption(list[cur]);
-      var next = new Image();
-      next.src = ST.src(list[(cur + 1) % list.length], 2400);
-      schedule();
-    }
-    function schedule() {
-      clearTimeout(timer);
-      if (ST.reduce && started) return;
-      timer = setTimeout(function () { if (visible && !document.hidden) go(cur + 1); else schedule(); }, DUR);
-    }
-    btns.forEach(function (b, k) { b.addEventListener("click", function () { go(k); }); });
-    if ("IntersectionObserver" in window) {
-      new IntersectionObserver(function (es) {
-        visible = es[0].isIntersecting;
-        show.classList.toggle("is-paused", !visible);
-      }).observe(show);
-    }
-    caption(list[0]);
-    started = true;
-    schedule();
-  }
 
   /* ---------------------------------------------------------------- two trips, one map */
   function tripsMap() {
@@ -201,11 +132,8 @@
     show("favorites");
   }
 
-  slideshow();
   ST.onReady(function () {
-    $$(".show [data-manual]").forEach(function (e, i) { setTimeout(function () { e.classList.add("is-in"); }, 150 + i * 40); });
     tripsMap();
     favorites();
   });
 })();
-

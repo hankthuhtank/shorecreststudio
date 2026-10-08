@@ -23,8 +23,9 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/safi.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="assets/img/photo/SC-001-1600.webp" imagesrcset="assets/img/photo/SC-001-480.webp 480w, assets/img/photo/SC-001-960.webp 960w, assets/img/photo/SC-001-1600.webp 1600w, assets/img/photo/SC-001-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/photo/SC-028-960.webp" imagesrcset="assets/img/photo/SC-028-480.webp 480w, assets/img/photo/SC-028-960.webp 960w, assets/img/photo/SC-028-1320.webp 1320w" imagesizes="(max-width: 760px) 74vw, 20vw" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/studio.css?v=20261006h">
+  <link rel="stylesheet" href="assets/css/expedition.css?v=20261007a">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Shorecrest Studio","url":"https://shorecrest.studio/","author":{"@type":"Person","name":"Helal Safi","url":"https://shorecrest.studio/about.html"},"sameAs":["https://shorecrest.store"]}</script>
 </head>
 <body>
@@ -62,23 +63,75 @@
   </div>
 
   <main id="main">
-    <section class="show" data-header="dark" aria-label="Photography by Helal Safi">
-      <div class="show__slides" data-slides></div>
-      <div class="show__shade"></div>
-      <div class="show__copy">
-        <div class="show__text">
-          <h1 class="h-hero" data-split data-manual>From shore <em>to crest.</em></h1>
-          <p class="show__sub" data-reveal data-manual style="--d:350">Photography by Helal Safi.</p>
-          <div class="show__ctas" data-reveal data-manual style="--d:500">
-            <a class="btn btn--light" href="#sel-title">Explore the photographs <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
-            <a class="link" href="about.html">About me</a>
-          </div>
-        </div>
-        <div class="show__now" data-reveal data-manual style="--d:650">
-          <a class="show__cap" href="45-days.html"><span class="show__place"></span><span class="show__title"></span></a>
-          <div class="show__bars"></div>
+    <section class="expedition" data-expedition data-header="dark" aria-labelledby="expedition-title">
+      <div class="expedition__atmosphere" aria-hidden="true"></div>
+      <div class="expedition__copy">
+        <h1 id="expedition-title">From shore <em>to crest.</em></h1>
+        <p>Photographs by Helal Safi.</p>
+        <div class="expedition__actions">
+          <a class="btn btn--light" href="#trips-title">Explore the journeys <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg></a>
+          <a class="expedition__all" href="photographs.html">All photographs</a>
         </div>
       </div>
+      <div class="expedition__scene" aria-label="Select a photograph to explore its collection">
+        <a class="expedition__photo expedition__photo--1" href="45-days.html?stop=grand-teton" data-depth="1.25" style="--ratio:1.35" aria-label="High Country, Grand Teton, Wyoming. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/SC-028-960.webp" srcset="assets/img/photo/SC-028-480.webp 480w, assets/img/photo/SC-028-960.webp 960w, assets/img/photo/SC-028-1320.webp 1320w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Mountain peaks beneath a wide sky in Grand Teton National Park" fetchpriority="high" loading="eager" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">High Country</span><span class="expedition__place">Grand Teton, Wyoming</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--2" href="45-days.html?stop=mount-shasta" data-depth="1.05" style="--ratio:.81" aria-label="Mountain Clearing, Mount Shasta, California. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/SC-041-960.webp" srcset="assets/img/photo/SC-041-480.webp 480w, assets/img/photo/SC-041-960.webp 960w, assets/img/photo/SC-041-1600.webp 1600w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Mount Shasta framed by trees and an open mountain clearing" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Mountain Clearing</span><span class="expedition__place">Mount Shasta, California</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--3" href="45-days.html?stop=big-sur" data-depth="1.45" style="--ratio:1.33" aria-label="Breaking Waves, Big Sur, California. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/SC-001-960.webp" srcset="assets/img/photo/SC-001-480.webp 480w, assets/img/photo/SC-001-960.webp 960w, assets/img/photo/SC-001-1600.webp 1600w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Waves meeting the rugged coast at Big Sur" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Breaking Waves</span><span class="expedition__place">Big Sur, California</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--4" href="45-days.html?stop=yosemite" data-depth="1.2" style="--ratio:1.33" aria-label="Valley View, Yosemite, California. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/SC-058-960.webp" srcset="assets/img/photo/SC-058-480.webp 480w, assets/img/photo/SC-058-960.webp 960w, assets/img/photo/SC-058-1600.webp 1600w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Mountain valley landscape in Yosemite National Park" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Valley View</span><span class="expedition__place">Yosemite, California</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--5" href="photographs.html?collection=wildlife" data-depth=".8" style="--ratio:.76" aria-label="Wolf, Wildlife. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/new-animal4-1320.webp" srcset="assets/img/photo/new-animal4-480.webp 480w, assets/img/photo/new-animal4-1320.webp 1320w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Wolf photographed in a wildlife portrait" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Wolf</span><span class="expedition__place">Wildlife</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--6" href="45-days.html?stop=kern-river" data-depth="1.05" style="--ratio:.75" aria-label="Valley Stream, Kern River, California. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/SC-014-960.webp" srcset="assets/img/photo/SC-014-480.webp 480w, assets/img/photo/SC-014-960.webp 960w, assets/img/photo/SC-014-1600.webp 1600w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Water flowing through a mountain valley along the Kern River" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Valley Stream</span><span class="expedition__place">Kern River, California</span></span>
+            </span>
+          </span>
+        </a>
+        <a class="expedition__photo expedition__photo--7" href="45-days.html?stop=toketee-falls" data-depth="1.3" style="--ratio:.76" aria-label="Toketee Falls, Oregon. View photographs">
+          <span class="expedition__float">
+            <span class="expedition__frame">
+              <img src="assets/img/photo/new-toketee-falls2-1320.webp" srcset="assets/img/photo/new-toketee-falls2-480.webp 480w, assets/img/photo/new-toketee-falls2-1320.webp 1320w" sizes="(max-width: 760px) 74vw, (max-width: 1100px) 24vw, 20vw" alt="Waterfall flowing into a rocky forest basin in Oregon" loading="lazy" decoding="async">
+              <span class="expedition__caption"><span class="expedition__title">Toketee Falls</span><span class="expedition__place">Oregon</span></span>
+            </span>
+          </span>
+        </a>
+      </div>
+      <p class="expedition__mobile-hint">Swipe to explore the photographs</p>
     </section>
 
     <section class="sec paper" data-header="light" aria-labelledby="trips-title">
@@ -188,6 +241,7 @@
   <script src="assets/js/core.js?v=20261006"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/viewer.js"></script>
-  <script src="assets/js/home.js?v=20261006d"></script>
+  <script src="assets/js/home.js?v=20261007a"></script>
+  <script src="assets/js/expedition.js?v=20261007a"></script>
 </body>
 </html>
