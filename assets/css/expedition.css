@@ -74,11 +74,11 @@
 .expedition__photo--2 { right: 6%; top: 15%; width: clamp(148px, 15.8vw, 252px); --rot: 6deg; --drift: 10s; --delay: -5.5s; }
 .expedition__photo--3 { left: 3.8%; top: 58%; width: clamp(172px, 20vw, 308px); --rot: 4deg; --drift: 8.5s; --delay: -1s; }
 .expedition__photo--4 { right: 3.6%; top: 59%; width: clamp(185px, 21vw, 318px); --rot: -5deg; --drift: 9.7s; --delay: -6s; }
-.expedition__photo--5 { left: 21%; top: 11%; width: clamp(150px, 13.5vw, 210px); --rot: 5deg; --drift: 8.7s; --delay: -4s; }
+.expedition__photo--5 { left: 19.5%; top: 11%; width: clamp(150px, 13.5vw, 210px); --rot: 5deg; --drift: 8.7s; --delay: -4s; }
 .expedition__photo--6 { left: 25%; bottom: 3%; width: clamp(165px, 14vw, 220px); --rot: -8deg; --drift: 10.5s; --delay: -2s; }
 .expedition__photo--7 { right: 25%; bottom: 4%; width: clamp(165px, 14vw, 220px); --rot: 7deg; --drift: 9.9s; --delay: -7s; }
 .expedition__photo--8 { left: 13%; top: 41%; width: clamp(150px, 14vw, 210px); --rot: -4deg; --drift: 10.2s; --delay: -5s; z-index: 1; }
-.expedition__photo--9 { right: 24%; top: 11%; width: clamp(150px, 13vw, 195px); --rot: -5deg; --drift: 9.4s; --delay: -2.5s; }
+.expedition__photo--9 { right: 20%; top: 11%; width: clamp(150px, 13vw, 195px); --rot: -5deg; --drift: 9.4s; --delay: -2.5s; }
 .expedition__photo--10 { left: 50%; bottom: 2%; width: clamp(200px, 19vw, 280px); margin-left: clamp(-140px, -9.5vw, -100px); --rot: 3deg; --drift: 10.7s; --delay: -4.5s; }
 .expedition__photo--11 { right: 13%; top: 42%; width: clamp(150px, 14vw, 210px); --rot: 5deg; --drift: 8.9s; --delay: -6.5s; z-index: 1; }
 .expedition__mobile-hint { display: none; }
@@ -91,11 +91,11 @@
   .expedition__photo--2 { right: 2%; top: 17%; width: 17vw; }
   .expedition__photo--3 { left: 2%; top: 57%; width: 22vw; }
   .expedition__photo--4 { right: 2%; top: 58%; width: 22vw; }
-  .expedition__photo--5 { left: 22%; top: 12%; width: 14vw; }
+  .expedition__photo--5 { left: 16%; top: 12%; width: 14vw; }
   .expedition__photo--6 { left: 25%; bottom: 3%; width: 15vw; }
   .expedition__photo--7 { right: 25%; bottom: 4%; width: 15vw; }
   .expedition__photo--8 { left: 10%; top: 42%; width: 17vw; }
-  .expedition__photo--9 { right: 23%; top: 12%; width: 14vw; }
+  .expedition__photo--9 { right: 14%; top: 12%; width: 14vw; }
   .expedition__photo--10 { width: 23vw; margin-left: -11.5vw; }
   .expedition__photo--11 { right: 10%; top: 42%; width: 17vw; }
 }
