@@ -281,7 +281,8 @@ svg[data-contours] g { opacity: .2; transform-origin: 50% 50%; transform-box: vi
 .atlas { position: relative; aspect-ratio: 5 / 4; border-radius: 22px; overflow: hidden; background: var(--paper-2); box-shadow: inset 0 0 0 1px rgba(25, 41, 40, .06); }
 .atlas canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .atlas .mlayer { position: absolute; inset: 0; pointer-events: none; }
-.atlas__credit { position: absolute; right: 14px; bottom: 10px; z-index: 2; font-size: .8rem; color: rgba(25, 41, 40, .45); }
+.atlas__credit { position: absolute; right: 10px; bottom: 6px; z-index: 2; font-size: .62rem; line-height: 1; color: rgba(25, 41, 40, .3); transition: color .3s; }
+.atlas__credit:hover, .atlas__credit:focus-within { color: rgba(25, 41, 40, .7); }
 
 /* ==========================================================================
    Justified photo rows (home selection, trip pages, photographs)
@@ -452,8 +453,8 @@ svg.band__contour { position: absolute; inset: 0; width: 100%; height: 100%; col
 .rail__where { flex: none; min-width: 170px; max-width: 240px; text-align: right; line-height: 1.2; }
 .rail__where b { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.2rem; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rail__where span { color: var(--muted); font-size: .96rem; }
-.ex__credit { position: absolute; z-index: 8; right: 12px; bottom: 3px; font-size: .74rem; color: rgba(25, 41, 40, .42); }
-.ex__credit a { text-decoration: underline; text-underline-offset: 2px; }
+.ex__credit { position: absolute; z-index: 8; right: 10px; bottom: 3px; font-size: .62rem; line-height: 1; color: rgba(25, 41, 40, .3); transition: color .3s; }
+.ex__credit:hover, .ex__credit:focus-within { color: rgba(25, 41, 40, .7); }
 
 /* ==========================================================================
    JOURNEY: photographs from the trip, next trip
