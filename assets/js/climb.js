@@ -44,9 +44,9 @@
     // the trail leaves from the word "shore", runs along the coast, then climbs switchbacks up to "crest."
     if (small) {
       A = { x: f.l + 6, y: f.t - 34 };
-      B = { x: t.r - 12, y: b.b + 28 };
-      C = { x: W - 30, y: A.y - 18 };
-      amp = H * .011; zz = W * .035;
+      B = { x: t.r - 34, y: b.b + 28 };
+      C = { x: W - 52, y: A.y - 18 };
+      amp = H * .011; zz = W * .03;
     } else {
       A = { x: f.r + W * .03, y: (f.t + f.b) / 2 };
       B = { x: t.l - W * .02, y: t.b - (t.b - t.t) * .15 };
@@ -78,7 +78,7 @@
       var dx = -m, dy = -(1 - m), len = Math.hypot(dx, dy); dx /= len; dy /= len;
       var reach = Math.abs(dx) * (pw + tw) / 2 + Math.abs(dy) * (ph + th) / 2 + 18;
       var cx = pt.x + dx * reach, cy = pt.y + dy * reach;
-      cx = ST.clamp(cx, (small ? 16 : W * .03) + pw / 2, W - 16 - pw / 2);
+      cx = ST.clamp(cx, (small ? 16 : W * .03) + pw / 2, W - (small ? 24 : 16) - pw / 2);
       var l = cx - pw / 2, r = cx + pw / 2;
       var top = Math.max(var_hdr(), r > Math.min(t.l, b.l) - 12 ? b.b + 14 : 0) + ph / 2;
       var bottom = l < f.r + 12 ? f.t - 14 : H - 16;
