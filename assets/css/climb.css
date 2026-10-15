@@ -1,0 +1,85 @@
+/* Shorecrest Studio homepage: the climb. One print travels from "From shore" to "to crest."
+   while the drawing behind it pans from the waves to the mountain. */
+.climb {
+  --edge: clamp(22px, 4.6vw, 84px);
+  --print-w: clamp(196px, 18.5vw, 300px);
+  position: relative; isolation: isolate; overflow: hidden;
+  height: 100svh; min-height: 660px; max-height: 1100px;
+  background: #16323b; color: var(--cloud); --accent: var(--sand-2);
+  touch-action: pan-y; -webkit-user-select: none; user-select: none;
+}
+
+/* ---------- The drawing ---------- */
+.climb__land { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.climb__land img {
+  position: absolute; left: 0; top: 0; height: 100%; width: auto; min-width: 116%; max-width: none;
+  object-fit: cover; will-change: transform;
+}
+.climb__land::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(9, 22, 26, .45), transparent 22%),
+              radial-gradient(ellipse 60% 55% at 50% 52%, rgba(8, 20, 24, .26), transparent 75%);
+}
+
+/* ---------- The two ends of the climb ---------- */
+.climb__title { position: static; font-size: clamp(3.4rem, 8.2vw, 9.4rem); font-weight: 360; line-height: .92; letter-spacing: -.04em; }
+.climb__from, .climb__to { position: absolute; z-index: 1; display: block; text-shadow: 0 6px 40px rgba(6, 18, 22, .35); }
+.climb__from { left: var(--edge); bottom: calc(9% + 1.4rem); }
+.climb__to { right: var(--edge); top: calc(var(--header-h) + 4%); text-align: right; }
+.climb__to em { color: var(--sand-2); }
+.climb__by { position: absolute; z-index: 1; right: var(--edge); top: calc(var(--header-h) + 4% + clamp(3.4rem, 8.2vw, 9.4rem) * .98); font-size: clamp(1.1rem, 1.45vw, 1.35rem); color: #dbe5df; }
+.climb__hint { position: absolute; z-index: 1; right: var(--edge); bottom: 9%; max-width: 24ch; text-align: right; font-size: 1.02rem; line-height: 1.35; color: #b9cbc4; }
+.climb__hint--touch { display: none; }
+@media (hover: none) { .climb__hint--fine { display: none; } .climb__hint--touch { display: inline; } }
+
+/* ---------- The print ---------- */
+.climb__stage { position: absolute; left: 0; top: 0; z-index: 3; width: var(--print-w); will-change: transform; }
+.climb__print {
+  display: block; padding: calc(var(--print-w) * .035); background: #f2f0e9; border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(5, 15, 18, .3), 0 24px 50px -12px rgba(4, 14, 17, .55), 0 50px 90px -30px rgba(4, 14, 17, .5);
+  transform: rotate(var(--tilt, 0deg)); transition: box-shadow .4s ease;
+  -webkit-user-drag: none;
+}
+.climb__print:focus-visible { outline: 3px solid var(--sand-2); outline-offset: 6px; }
+.climb__photos { position: relative; display: block; aspect-ratio: 3 / 4; overflow: hidden; background: #2b3a3a; }
+.climb__photos img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; transition: opacity .14s linear; -webkit-user-drag: none; pointer-events: none;
+}
+.climb__photos img.is-on { opacity: 1; }
+/* a gallery label beside the print */
+.climb__cap {
+  position: absolute; left: calc(100% + 22px); bottom: 2px; width: max-content; max-width: 22ch;
+  display: flex; flex-direction: column; gap: 2px; line-height: 1.2; text-shadow: 0 2px 16px rgba(5, 16, 19, .6);
+}
+.climb__cap.is-left { left: auto; right: calc(100% + 22px); align-items: flex-end; text-align: right; }
+.climb__cap-title { font-size: clamp(1.08rem, 1.3vw, 1.3rem); color: var(--cloud); }
+.climb__cap-place { font-size: clamp(.92rem, 1vw, 1.04rem); color: #c3d2cb; }
+.climb.is-dragging, .climb.is-dragging .climb__print { cursor: grabbing; }
+
+/* ---------- Arrival ---------- */
+.js .climb__from, .js .climb__to, .js .climb__by, .js .climb__hint { opacity: 0; transform: translate3d(0, 18px, 0); transition: opacity 1s ease, transform 1.2s var(--ease-out); }
+.js .climb__to { transition-delay: .15s; }
+.js .climb__by { transition-delay: .35s; }
+.js .climb__hint { transition-delay: .6s; }
+.js .climb.is-set .climb__from, .js .climb.is-set .climb__to, .js .climb.is-set .climb__by, .js .climb.is-set .climb__hint { opacity: 1; transform: none; }
+.js .climb__stage .climb__print, .js .climb__cap { opacity: 0; }
+.js .climb.is-set .climb__print { animation: print-in 1s var(--ease-out) .25s both; }
+.js .climb.is-set .climb__cap { animation: cap-in .8s ease .7s both; }
+@keyframes print-in { from { opacity: 0; translate: 0 26px; scale: .96; } to { opacity: 1; translate: 0 0; scale: 1; } }
+@keyframes cap-in { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 760px), (max-width: 1100px) and (orientation: portrait) {
+  .climb { --print-w: min(54vw, 280px); min-height: 600px; max-height: 960px; }
+  .climb__title { font-size: clamp(3.1rem, 15.5vw, 5.4rem); }
+  .climb__to { top: calc(var(--header-h) + 6px); }
+  .climb__by { top: calc(var(--header-h) + 6px + clamp(3.1rem, 15.5vw, 5.4rem) * .98); font-size: 1.05rem; }
+  .climb__from { bottom: calc(5% + 2.9rem); }
+  .climb__hint { right: var(--edge); left: var(--edge); bottom: 5%; max-width: none; text-align: left; font-size: .98rem; }
+  .climb__cap, .climb__cap.is-left { position: static; width: auto; max-width: none; margin-top: 12px; align-items: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .climb__from, .js .climb__to, .js .climb__by, .js .climb__hint, .js .climb__stage .climb__print, .js .climb__cap { opacity: 1; transform: none; transition: none; animation: none; }
+  .climb__photos img { transition: none; }
+}
+html:not(.js) .climb__stage { left: 50%; top: 50%; transform: translate(-50%, -50%); }

@@ -8,6 +8,7 @@
 ## Style rules from the owner
 
 - Headings use Fraunces; body text uses Safi (the photographer's handwriting). Keep both.
+- No hand-drawn circles, grease-pencil marks or other scribbles around photos.
 - No eyebrow labels above headings, no small uppercase letter-spaced or monospace labels, no "big number + label" stat rows, no icon feature grids. Write counts and labels in normal sentence case.
 - Rich motion and transitions are welcome, but nothing overdramatic, no postcard, and no endless scrolling pages.
 - Write like a person: plain, specific sentences in the owner's first-person voice. Avoid stock marketing phrases.
