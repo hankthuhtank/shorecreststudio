@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Preview the site locally with caching turned off:  python tools/serve.py   ->  http://localhost:8418"""
+
 import http.server
 import os
 import sys
@@ -10,9 +11,14 @@ PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8418
 
 
 class NoCache(http.server.SimpleHTTPRequestHandler):
-    extensions_map = {**http.server.SimpleHTTPRequestHandler.extensions_map,
-                      ".webp": "image/webp", ".woff2": "font/woff2", ".svg": "image/svg+xml",
-                      ".js": "text/javascript", ".webmanifest": "application/manifest+json"}
+    extensions_map = {
+        **http.server.SimpleHTTPRequestHandler.extensions_map,
+        ".webp": "image/webp",
+        ".woff2": "font/woff2",
+        ".svg": "image/svg+xml",
+        ".js": "text/javascript",
+        ".webmanifest": "application/manifest+json",
+    }
 
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")

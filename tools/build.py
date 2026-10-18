@@ -20,6 +20,7 @@ so a normal build never touches the network unless a stop changes.
 
 Requires Python 3.9+ with:  pip install pillow numpy
 """
+
 import base64
 import io
 import json
@@ -75,8 +76,12 @@ def trim_bars(im):
     left = int(np.argmax(~dark_c)) if (~dark_c).any() else 0
     right = len(dark_c) - int(np.argmax(~dark_c[::-1]))
     pad = 2 if (top or left or bottom < a.shape[0] or right < a.shape[1]) else 0
-    box = (left + (pad if left else 0), top + (pad if top else 0),
-           right - (pad if right < a.shape[1] else 0), bottom - (pad if bottom < a.shape[0] else 0))
+    box = (
+        left + (pad if left else 0),
+        top + (pad if top else 0),
+        right - (pad if right < a.shape[1] else 0),
+        bottom - (pad if bottom < a.shape[0] else 0),
+    )
     return im.crop(box) if box != (0, 0, a.shape[1], a.shape[0]) else im
 
 
@@ -109,9 +114,14 @@ def process(job):
     small.thumbnail((24, 24))
     buf = io.BytesIO()
     small.save(buf, "WEBP", quality=45)
-    return {"id": pid, "w": im.width, "h": im.height, "s": ws,
-            "c": "#{:02x}{:02x}{:02x}".format(*im.resize((1, 1), Image.BOX).getpixel((0, 0))),
-            "q": "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()}
+    return {
+        "id": pid,
+        "w": im.width,
+        "h": im.height,
+        "s": ws,
+        "c": "#{:02x}{:02x}{:02x}".format(*im.resize((1, 1), Image.BOX).getpixel((0, 0))),
+        "q": "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode(),
+    }
 
 
 def load_sources(trips):
@@ -125,20 +135,36 @@ def load_sources(trips):
     for s in scenes:
         master = next(a for a in s["assets"] if a["kind"] == "Photo master")
         n = scene_notes.get(s["id"], {})
-        photos[s["id"]] = {"src": SRC_45 / "Masters" / Path(master["file"]).name, "kind": "master",
-                           "title": s["title"], "place": s["collection"], "line": n.get("line", ""),
-                           "alt": n.get("alt", f"{s['title']}, {s['collection']}.")}
+        photos[s["id"]] = {
+            "src": SRC_45 / "Masters" / Path(master["file"]).name,
+            "kind": "master",
+            "title": s["title"],
+            "place": s["collection"],
+            "line": n.get("line", ""),
+            "alt": n.get("alt", f"{s['title']}, {s['collection']}."),
+        }
     for p in sorted(SRC_2019.glob("*.png")):
         pid = "2019-" + p.stem.lower()
         n = notes_2019.get(pid, {})
-        photos[pid] = {"src": p, "kind": "shot", "title": n.get("title", p.stem), "place": n.get("place", ""),
-                       "line": n.get("line", ""), "alt": n.get("alt", n.get("title", p.stem))}
+        photos[pid] = {
+            "src": p,
+            "kind": "shot",
+            "title": n.get("title", p.stem),
+            "place": n.get("place", ""),
+            "line": n.get("line", ""),
+            "alt": n.get("alt", n.get("title", p.stem)),
+        }
     return photos
 
 
 # --------------------------------------------------------------------------- projection (Albers equal-area conic, centred on the West)
 R_EARTH = 6371.0088
-PHI1, PHI2, PHI0, LAM0 = math.radians(29.5), math.radians(45.5), math.radians(37.5), math.radians(-108.0)
+PHI1, PHI2, PHI0, LAM0 = (
+    math.radians(29.5),
+    math.radians(45.5),
+    math.radians(37.5),
+    math.radians(-108.0),
+)
 _N = (math.sin(PHI1) + math.sin(PHI2)) / 2
 _C = math.cos(PHI1) ** 2 + 2 * _N * math.sin(PHI1)
 _RHO0 = R_EARTH * math.sqrt(_C - 2 * _N * math.sin(PHI0)) / _N
@@ -167,7 +193,11 @@ def rdp(pts, eps):
         idx, dmax = -1, 0.0
         for i in range(a + 1, b):
             px, py = pts[i]
-            d = abs(dy * px - dx * py + bx * ay - by * ax) / norm if norm > 1e-12 else math.hypot(px - ax, py - ay)
+            d = (
+                abs(dy * px - dx * py + bx * ay - by * ax) / norm
+                if norm > 1e-12
+                else math.hypot(px - ax, py - ay)
+            )
             if d > dmax:
                 idx, dmax = i, d
         if dmax > eps and idx > 0:
@@ -191,7 +221,11 @@ def delta_ints(pts, unit):
 # --------------------------------------------------------------------------- road routes
 class Router:
     def __init__(self, refetch=False):
-        self.cache = {} if refetch or not ROUTE_CACHE.exists() else json.loads(ROUTE_CACHE.read_text(encoding="utf-8"))
+        self.cache = (
+            {}
+            if refetch or not ROUTE_CACHE.exists()
+            else json.loads(ROUTE_CACHE.read_text(encoding="utf-8"))
+        )
         self.used, self.fetched, self.last = set(), 0, 0.0
 
     def route(self, pts):
@@ -219,7 +253,10 @@ class Router:
             if data.get("code") != "Ok":
                 raise RuntimeError(f"OSRM could not route {key}: {data.get('code')}")
             rt = data["routes"][0]
-            self.cache[key] = {"g": [[round(x, 5), round(y, 5)] for x, y in rt["geometry"]["coordinates"]], "d": round(rt["distance"])}
+            self.cache[key] = {
+                "g": [[round(x, 5), round(y, 5)] for x, y in rt["geometry"]["coordinates"]],
+                "d": round(rt["distance"]),
+            }
             ROUTE_CACHE.write_text(json.dumps(self.cache, separators=(",", ":")), encoding="utf-8")
         c = self.cache[key]
         return [tuple(p) for p in c["g"]], c["d"]
@@ -277,7 +314,14 @@ def build_trip_geo(trip, router, eps):
                 x, y = project(ph["at"][1], ph["at"][0])
                 spots[ph["id"]] = [round(x, 2), round(y, 2)]
     bounds = [round(min(xs), 1), round(min(ys), 1), round(max(xs), 1), round(max(ys), 1)]
-    return {"color": trip["color"], "bounds": bounds, "legs": legs, "stops": markers, "labels": labels, "spots": spots}, distances
+    return {
+        "color": trip["color"],
+        "bounds": bounds,
+        "legs": legs,
+        "stops": markers,
+        "labels": labels,
+        "spots": spots,
+    }, distances
 
 
 def build_states(eps):
@@ -296,7 +340,10 @@ def build_states(eps):
                 simp = rdp(proj, eps)
                 if len(simp) < 4:
                     continue
-                area = 0.5 * sum(simp[i][0] * simp[i - 1][1] - simp[i - 1][0] * simp[i][1] for i in range(len(simp)))
+                area = 0.5 * sum(
+                    simp[i][0] * simp[i - 1][1] - simp[i - 1][0] * simp[i][1]
+                    for i in range(len(simp))
+                )
                 if k == 0 and abs(area) > best_area:
                     best_area, best = abs(area), simp
                 rings.append(delta_ints(simp, 0.1))
@@ -312,7 +359,14 @@ def build_states(eps):
             cx += (x0 + x1) * cr
             cy += (y0 + y1) * cr
         a6 *= 3
-        out.append({"n": f["properties"]["name"], "c": code, "l": [round(cx / a6, 1), round(cy / a6, 1)], "r": rings})
+        out.append(
+            {
+                "n": f["properties"]["name"],
+                "c": code,
+                "l": [round(cx / a6, 1), round(cy / a6, 1)],
+                "r": rings,
+            }
+        )
     return out
 
 
@@ -351,7 +405,9 @@ def build_metadata():
         for i, st in enumerate(trip["stops"]):
             x, y = project(st["lng"], st["lat"])
             if [round(x, 2), round(y, 2)] != g["stops"][i]:
-                raise SystemExit("Route coordinates changed; rebuild routes from the original sources.")
+                raise SystemExit(
+                    "Route coordinates changed; rebuild routes from the original sources."
+                )
             dist = g["legs"][i]["d"] if g["legs"][i] else 0
             distances.append(dist)
             ids = []
@@ -362,25 +418,50 @@ def build_metadata():
                 if isinstance(ph, dict) and ph.get("place"):
                     p["place"] = ph["place"]
                 ids.append(pid)
-            stops.append({"id": st["id"], "name": st["name"], "region": st.get("region", ""),
-                          "stay": st.get("stay", ""), "story": st.get("story", ""), "dist": dist,
-                          "distNote": st.get("distanceNote", ""), "photos": ids})
+            stops.append(
+                {
+                    "id": st["id"],
+                    "name": st["name"],
+                    "region": st.get("region", ""),
+                    "stay": st.get("stay", ""),
+                    "story": st.get("story", ""),
+                    "dist": dist,
+                    "distNote": st.get("distanceNote", ""),
+                    "photos": ids,
+                }
+            )
         for pid in trip.get("unpinned", []):
             by_id[pid]["trip"] = trip["id"]
-        rows.append({**{k: trip[k] for k in ("id", "page", "name", "title", "subtitle", "story", "color", "cover")},
-                     "days": trip.get("days", False), "miles": round(sum(distances) / 1609.344),
-                     "stops": stops, "unpinned": trip.get("unpinned", [])})
+        rows.append(
+            {
+                **{
+                    k: trip[k]
+                    for k in ("id", "page", "name", "title", "subtitle", "story", "color", "cover")
+                },
+                "days": trip.get("days", False),
+                "miles": round(sum(distances) / 1609.344),
+                "stops": stops,
+                "unpinned": trip.get("unpinned", []),
+            }
+        )
     (JS / "data.js").write_text(
         "/* Generated by tools/build.py from tools/trips.json, photo-catalog.json and collections.json. */\n"
         "window.ST_PHOTOS=" + json.dumps(photos, ensure_ascii=False, separators=(",", ":")) + ";\n"
         "window.ST_TRIPS=" + json.dumps(rows, ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "window.ST_COLLECTIONS=" + json.dumps(collections, ensure_ascii=False, separators=(",", ":")) + ";\n",
-        encoding="utf-8")
-    print(f"Done: {len(photos)} photographs in {len(collections)} collections; existing roads preserved.")
+        "window.ST_COLLECTIONS="
+        + json.dumps(collections, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
+        encoding="utf-8",
+    )
+    print(
+        f"Done: {len(photos)} photographs in {len(collections)} collections; existing roads preserved."
+    )
 
 
 def main():
-    if (TOOLS / "photo-catalog.json").exists() and not any(a in sys.argv for a in ("--force", "--routes")):
+    if (TOOLS / "photo-catalog.json").exists() and not any(
+        a in sys.argv for a in ("--force", "--routes")
+    ):
         build_metadata()
         return
     force = "--force" in sys.argv
@@ -398,8 +479,11 @@ def main():
                 if pid not in sources:
                     raise SystemExit(f"Unknown photo {pid} at {trip['id']}/{st['id']}")
                 order.append(pid)
-                placement[pid] = {"trip": trip["id"], "stop": st["id"],
-                                  "place": (ph.get("place") if isinstance(ph, dict) else None)}
+                placement[pid] = {
+                    "trip": trip["id"],
+                    "stop": st["id"],
+                    "place": (ph.get("place") if isinstance(ph, dict) else None),
+                }
         for pid in trip.get("unpinned", []):
             order.append(pid)
             placement[pid] = {"trip": trip["id"], "stop": None, "place": None}
@@ -408,7 +492,11 @@ def main():
         print("Note: not placed on either trip, so not on the site:", ", ".join(missing))
 
     # images
-    cache = json.loads(CACHE_FILE.read_text(encoding="utf-8")) if CACHE_FILE.exists() and not force else {}
+    cache = (
+        json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        if CACHE_FILE.exists() and not force
+        else {}
+    )
     jobs = []
     for pid in order:
         s = sources[pid]
@@ -435,7 +523,9 @@ def main():
         geo["trips"][trip["id"]] = g
         dist_by_trip[trip["id"]] = dists
         pts = sum(len(l["p"]) // 2 for l in g["legs"] if l)
-        print(f"  {trip['id']}: {len(trip['stops'])} stops, {sum(dists) / 1609.344:,.0f} miles, {pts:,} route points")
+        print(
+            f"  {trip['id']}: {len(trip['stops'])} stops, {sum(dists) / 1609.344:,.0f} miles, {pts:,} route points"
+        )
     router.prune()
     if router.fetched:
         print(f"  fetched {router.fetched} new routes from OSRM")
@@ -444,11 +534,21 @@ def main():
     geo["regions"] = []
     for r in cfg.get("regions", []):
         x, y = project(r["lng"], r["lat"])
-        geo["regions"].append({"n": r["name"], "x": round(x, 1), "y": round(y, 1), "r": r.get("rotate", 0), "s": r.get("size", 15)})
+        geo["regions"].append(
+            {
+                "n": r["name"],
+                "x": round(x, 1),
+                "y": round(y, 1),
+                "r": r.get("rotate", 0),
+                "s": r.get("size", 15),
+            }
+        )
     (JS / "geo.js").write_text(
         "/* Generated by tools/build.py. Map geometry in km (Albers equal-area, centred on the West).\n"
         "   Roads: OpenStreetMap contributors via OSRM. State outlines: U.S. Census Bureau. */\n"
-        "window.ST_GEO=" + json.dumps(geo, separators=(",", ":")) + ";\n", encoding="utf-8")
+        "window.ST_GEO=" + json.dumps(geo, separators=(",", ":")) + ";\n",
+        encoding="utf-8",
+    )
 
     # data for the pages
     photos = []
@@ -461,26 +561,67 @@ def main():
         place = pl["place"] or s["place"]
         if s["kind"] == "master" and stop and not pl["place"]:
             place = stop["name"] + (", " + stop["region"] if stop.get("region") else "")
-        photos.append({"id": pid, "trip": pl["trip"], "stop": pl["stop"], "title": s["title"], "place": place,
-                       "line": s["line"], "alt": s["alt"], "w": c["w"], "h": c["h"], "s": c["s"], "c": c["c"], "q": c["q"]})
+        photos.append(
+            {
+                "id": pid,
+                "trip": pl["trip"],
+                "stop": pl["stop"],
+                "title": s["title"],
+                "place": place,
+                "line": s["line"],
+                "alt": s["alt"],
+                "w": c["w"],
+                "h": c["h"],
+                "s": c["s"],
+                "c": c["c"],
+                "q": c["q"],
+            }
+        )
     trip_rows = []
     for trip in trips:
         dists = dist_by_trip[trip["id"]]
         stops = []
         for i, st in enumerate(trip["stops"]):
-            stops.append({"id": st["id"], "name": st["name"], "region": st.get("region", ""), "stay": st.get("stay", ""),
-                          "story": st.get("story", ""), "dist": dists[i], "distNote": st.get("distanceNote", ""),
-                          "photos": [p if isinstance(p, str) else p["id"] for p in st.get("photos", [])]})
-        trip_rows.append({"id": trip["id"], "page": trip["page"], "name": trip["name"], "title": trip["title"],
-                          "subtitle": trip["subtitle"], "story": trip["story"], "color": trip["color"], "cover": trip["cover"],
-                          "days": trip.get("days", False), "miles": round(sum(dists) / 1609.344),
-                          "stops": stops, "unpinned": trip.get("unpinned", [])})
+            stops.append(
+                {
+                    "id": st["id"],
+                    "name": st["name"],
+                    "region": st.get("region", ""),
+                    "stay": st.get("stay", ""),
+                    "story": st.get("story", ""),
+                    "dist": dists[i],
+                    "distNote": st.get("distanceNote", ""),
+                    "photos": [p if isinstance(p, str) else p["id"] for p in st.get("photos", [])],
+                }
+            )
+        trip_rows.append(
+            {
+                "id": trip["id"],
+                "page": trip["page"],
+                "name": trip["name"],
+                "title": trip["title"],
+                "subtitle": trip["subtitle"],
+                "story": trip["story"],
+                "color": trip["color"],
+                "cover": trip["cover"],
+                "days": trip.get("days", False),
+                "miles": round(sum(dists) / 1609.344),
+                "stops": stops,
+                "unpinned": trip.get("unpinned", []),
+            }
+        )
     (JS / "data.js").write_text(
         "/* Generated by tools/build.py from tools/trips.json and the photo notes. Edit those, then rebuild. */\n"
         "window.ST_PHOTOS=" + json.dumps(photos, ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "window.ST_TRIPS=" + json.dumps(trip_rows, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+        "window.ST_TRIPS="
+        + json.dumps(trip_rows, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
+        encoding="utf-8",
+    )
     kb = lambda p: p.stat().st_size / 1024
-    print(f"Done: {len(photos)} photographs. data.js {kb(JS / 'data.js'):.0f} KB, geo.js {kb(JS / 'geo.js'):.0f} KB")
+    print(
+        f"Done: {len(photos)} photographs. data.js {kb(JS / 'data.js'):.0f} KB, geo.js {kb(JS / 'geo.js'):.0f} KB"
+    )
 
 
 if __name__ == "__main__":

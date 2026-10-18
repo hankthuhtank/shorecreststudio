@@ -105,12 +105,7 @@
     "id": "night",
     "name": "Night skies",
     "cover": "new-night4",
-    "photos": [
-      "new-night4",
-      "new-night3",
-      "new-night2",
-      "new-night"
-    ]
+    "photos": ["new-night4", "new-night3", "new-night2", "new-night"]
   },
   {
     "id": "desert",

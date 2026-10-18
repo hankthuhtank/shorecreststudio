@@ -37,9 +37,7 @@
           "lng": -104.8205,
           "stay": "Day 1, camped",
           "story": "Camped the first night at Guadalupe Peak, the highest point in Texas.",
-          "photos": [
-            "2019-guadalupepeak"
-          ]
+          "photos": ["2019-guadalupepeak"]
         },
         {
           "id": "carlsbad-caverns",
@@ -49,11 +47,7 @@
           "lng": -104.4437,
           "stay": "Day 2",
           "story": "The next morning, down into Carlsbad Caverns.",
-          "photos": [
-            "2019-carlsbad2",
-            "2019-carlsbad",
-            "2019-carlsbad3"
-          ]
+          "photos": ["2019-carlsbad2", "2019-carlsbad", "2019-carlsbad3"]
         },
         {
           "id": "bottomless-lakes",
@@ -90,9 +84,7 @@
           "lng": -106.1717,
           "stay": "Day 4",
           "story": "Day four, out onto White Sands.",
-          "photos": [
-            "2019-whitesands"
-          ]
+          "photos": ["2019-whitesands"]
         },
         {
           "id": "winslow",
@@ -102,10 +94,7 @@
           "lng": -110.6974,
           "stay": "Day 4",
           "story": "Then west into Arizona, all the way to Winslow.",
-          "photos": [
-            "2019-arizona3",
-            "2019-arizona"
-          ]
+          "photos": ["2019-arizona3", "2019-arizona"]
         },
         {
           "id": "grand-canyon",
@@ -115,11 +104,7 @@
           "lng": -112.1401,
           "stay": "Day 5, camped",
           "story": "From Winslow, straight to the Grand Canyon. Camped a night there.",
-          "photos": [
-            "2019-grandcanyon2",
-            "2019-grandcanyon",
-            "2019-arizona2"
-          ]
+          "photos": ["2019-grandcanyon2", "2019-grandcanyon", "2019-arizona2"]
         },
         {
           "id": "horseshoe-bend",
@@ -136,9 +121,7 @@
               "label": "Desert View"
             }
           ],
-          "photos": [
-            "2019-horseshoebay"
-          ]
+          "photos": ["2019-horseshoebay"]
         },
         {
           "id": "zion",
@@ -148,10 +131,7 @@
           "lng": -112.9877,
           "stay": "Day 6, camped",
           "story": "Then on to Zion, and another night camping.",
-          "photos": [
-            "2019-zion",
-            "2019-utah"
-          ]
+          "photos": ["2019-zion", "2019-utah"]
         },
         {
           "id": "mesa-verde",
@@ -161,10 +141,7 @@
           "lng": -108.4887,
           "stay": "Day 7",
           "story": "From Zion, straight east into Colorado to Mesa Verde.",
-          "photos": [
-            "2019-mesaverde2",
-            "2019-mesaverde"
-          ]
+          "photos": ["2019-mesaverde2", "2019-mesaverde"]
         },
         {
           "id": "durango",
@@ -183,9 +160,7 @@
           "lng": -101.8552,
           "stay": "Day 8, one night",
           "story": "Back into Texas the next day, with a night near Lubbock.",
-          "photos": [
-            "2019-texas"
-          ]
+          "photos": ["2019-texas"]
         },
         {
           "id": "paris",
@@ -238,9 +213,7 @@
           "lng": -110.6974,
           "stay": "One night",
           "story": "Drove straight through New Mexico and stopped in Winslow, because of my love for the Eagles.",
-          "photos": [
-            "new-winslow"
-          ]
+          "photos": ["new-winslow"]
         },
         {
           "id": "grand-canyon",
@@ -250,10 +223,7 @@
           "lng": -112.1401,
           "stay": "One night",
           "story": "In at the South Rim, then along the rim from west to east.",
-          "photos": [
-            "SC-021",
-            "SC-023"
-          ]
+          "photos": ["SC-021", "SC-023"]
         },
         {
           "id": "zion",
@@ -278,10 +248,7 @@
             "SC-061",
             {
               "id": "SC-022",
-              "at": [
-                36.9643,
-                -111.4846
-              ],
+              "at": [36.9643, -111.4846],
               "place": "Lake Powell, Arizona"
             },
             "SC-062",
@@ -298,9 +265,7 @@
           "lng": -115.1728,
           "stay": "One night",
           "story": "A night in Vegas.",
-          "photos": [
-            "new-vegas"
-          ]
+          "photos": ["new-vegas"]
         },
         {
           "id": "death-valley",
@@ -310,9 +275,7 @@
           "lng": -116.8669,
           "stay": "Passing through",
           "story": "Through Death Valley, then west toward Mount Whitney.",
-          "photos": [
-            "new-deathvalley"
-          ]
+          "photos": ["new-deathvalley"]
         },
         {
           "id": "lone-pine",
@@ -322,9 +285,7 @@
           "lng": -118.0629,
           "stay": "Camped one night",
           "story": "Camped outside Lone Pine, in the shadow of Mount Whitney.",
-          "photos": [
-            "new-mt-whitney"
-          ]
+          "photos": ["new-mt-whitney"]
         },
         {
           "id": "lake-isabella",
@@ -339,10 +300,7 @@
             "SC-010",
             {
               "id": "SC-005",
-              "at": [
-                35.663,
-                -118.028
-              ],
+              "at": [35.663, -118.028],
               "place": "On the way to Lake Isabella"
             }
           ]
@@ -355,11 +313,7 @@
           "lng": -118.4253,
           "stay": "Passing through",
           "story": "Up to Kernville and the Kern River.",
-          "photos": [
-            "SC-008",
-            "SC-014",
-            "SC-009"
-          ]
+          "photos": ["SC-008", "SC-014", "SC-009"]
         },
         {
           "id": "sequoia",
@@ -375,12 +329,7 @@
               "lng": -118.7059
             }
           ],
-          "photos": [
-            "SC-039",
-            "SC-040",
-            "SC-006",
-            "SC-011"
-          ]
+          "photos": ["SC-039", "SC-040", "SC-006", "SC-011"]
         },
         {
           "id": "oakhurst",
@@ -390,10 +339,7 @@
           "lng": -119.6493,
           "stay": "One night",
           "story": "A night in Oakhurst, in the foothills below Yosemite.",
-          "photos": [
-            "SC-013",
-            "SC-012"
-          ]
+          "photos": ["SC-013", "SC-012"]
         },
         {
           "id": "yosemite",
@@ -403,11 +349,7 @@
           "lng": -119.5936,
           "stay": "Camped one night",
           "story": "Then camped in Yosemite.",
-          "photos": [
-            "SC-058",
-            "SC-060",
-            "SC-059"
-          ]
+          "photos": ["SC-058", "SC-060", "SC-059"]
         },
         {
           "id": "big-sur",
@@ -417,12 +359,7 @@
           "lng": -121.8081,
           "stay": "One night",
           "story": "All the way west to Big Sur.",
-          "photos": [
-            "SC-003",
-            "SC-001",
-            "SC-004",
-            "SC-002"
-          ]
+          "photos": ["SC-003", "SC-001", "SC-004", "SC-002"]
         },
         {
           "id": "san-francisco",
@@ -442,9 +379,7 @@
               "lng": -122.4286
             }
           ],
-          "photos": [
-            "SC-020"
-          ]
+          "photos": ["SC-020"]
         },
         {
           "id": "fort-bragg",
@@ -519,13 +454,7 @@
               "lng": -120.1452
             }
           ],
-          "photos": [
-            "SC-044",
-            "SC-043",
-            "SC-046",
-            "SC-047",
-            "SC-045"
-          ]
+          "photos": ["SC-044", "SC-043", "SC-046", "SC-047", "SC-045"]
         },
         {
           "id": "burney-falls",
@@ -554,9 +483,7 @@
               "lng": -121.4244
             }
           ],
-          "photos": [
-            "new-burney-falls"
-          ]
+          "photos": ["new-burney-falls"]
         },
         {
           "id": "mount-shasta",
@@ -576,10 +503,7 @@
               "lng": -122.3106
             }
           ],
-          "photos": [
-            "SC-042",
-            "SC-041"
-          ]
+          "photos": ["SC-042", "SC-041"]
         },
         {
           "id": "crater-lake",
@@ -589,9 +513,7 @@
           "lng": -122.1434,
           "stay": "Passing through",
           "story": "Most of the park was under a ton of snow. I got one solid view of the whole lake.",
-          "photos": [
-            "SC-018"
-          ]
+          "photos": ["SC-018"]
         },
         {
           "id": "toketee-falls",
@@ -612,11 +534,7 @@
               "label": "Clearwater Falls"
             }
           ],
-          "photos": [
-            "SC-034",
-            "new-toketee-falls",
-            "new-toketee-falls2"
-          ]
+          "photos": ["SC-034", "new-toketee-falls", "new-toketee-falls2"]
         },
         {
           "id": "coos-bay",
@@ -663,9 +581,7 @@
               "lng": -122.6465
             }
           ],
-          "photos": [
-            "new-crescentlake"
-          ]
+          "photos": ["new-crescentlake"]
         },
         {
           "id": "rainier",
@@ -675,9 +591,7 @@
           "lng": -121.735,
           "stay": "Passing through",
           "story": "After a week in Poulsbo, Mount Rainier.",
-          "photos": [
-            "SC-035"
-          ]
+          "photos": ["SC-035"]
         },
         {
           "id": "puyallup",
@@ -696,9 +610,7 @@
           "lng": -121.8377,
           "stay": "Passing through",
           "story": "A stop at Snoqualmie Falls on the way north.",
-          "photos": [
-            "new-snoqualmee"
-          ]
+          "photos": ["new-snoqualmee"]
         },
         {
           "id": "north-cascades",
@@ -708,11 +620,7 @@
           "lng": -121.1072,
           "stay": "Two nights",
           "story": "Two days and two nights. One stormy day and one sunny one, and each had its own character.",
-          "photos": [
-            "SC-031",
-            "SC-032",
-            "SC-033"
-          ]
+          "photos": ["SC-031", "SC-032", "SC-033"]
         },
         {
           "id": "leavenworth",
@@ -746,9 +654,7 @@
           "lng": -113.9877,
           "stay": "Two days",
           "story": "Two days at Glacier.",
-          "photos": [
-            "SC-019"
-          ]
+          "photos": ["SC-019"]
         },
         {
           "id": "yellowstone",
@@ -764,14 +670,7 @@
               "lng": -113.994
             }
           ],
-          "photos": [
-            "SC-054",
-            "SC-053",
-            "SC-055",
-            "SC-052",
-            "SC-056",
-            "SC-057"
-          ]
+          "photos": ["SC-054", "SC-053", "SC-055", "SC-052", "SC-056", "SC-057"]
         },
         {
           "id": "grand-teton",
@@ -799,16 +698,7 @@
               "lng": -111.1113
             }
           ],
-          "photos": [
-            "SC-030",
-            "SC-025",
-            "SC-024",
-            "SC-029",
-            "SC-026",
-            "SC-027",
-            "SC-028",
-            "SC-038"
-          ]
+          "photos": ["SC-030", "SC-025", "SC-024", "SC-029", "SC-026", "SC-027", "SC-028", "SC-038"]
         },
         {
           "id": "steamboat",
@@ -836,10 +726,7 @@
           "photos": [
             {
               "id": "SC-048",
-              "at": [
-                40.9147,
-                -109.4214
-              ],
+              "at": [40.9147, -109.4214],
               "place": "Flaming Gorge, Utah"
             }
           ]
@@ -852,10 +739,7 @@
           "lng": -105.8318,
           "stay": "One night",
           "story": "A night at Rocky Mountain National Park.",
-          "photos": [
-            "SC-017",
-            "SC-015"
-          ]
+          "photos": ["SC-017", "SC-015"]
         },
         {
           "id": "black-canyon",
@@ -877,10 +761,7 @@
           "photos": [
             {
               "id": "SC-016",
-              "at": [
-                38.153,
-                -107.824
-              ],
+              "at": [38.153, -107.824],
               "place": "On the way to Telluride"
             }
           ]
@@ -895,13 +776,7 @@
           "story": "Back to Paris, Texas, on April 14. Exactly 45 days."
         }
       ],
-      "unpinned": [
-        "SC-036",
-        "SC-037",
-        "SC-049",
-        "SC-050",
-        "SC-051"
-      ],
+      "unpinned": ["SC-036", "SC-037", "SC-049", "SC-050", "SC-051"],
       "landmarks": [
         {
           "name": "Mount Whitney",
